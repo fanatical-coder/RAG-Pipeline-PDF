@@ -1,0 +1,109 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">PDF-RAG system</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Information</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-upload" (click)="fileInput.click()">Upload PDF</button>
+      <input #fileInput type="file" accept=".pdf" style="display:none"
+             (change)="onFileSelected($event)" />
+      <button class="btn-login" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Upload status bar -->
+<div class="upload-bar" *ngIf="uploadMessage">
+  <div class="upload-bar-inner" [class.success]="uploadSuccess" [class.error]="!uploadSuccess && !uploading">
+    <span>{{ uploadMessage }}</span>
+    <div class="upload-actions" *ngIf="selectedFile && !uploading">
+      <button class="btn-confirm" (click)="uploadPdf()">Upload Now</button>
+      <button class="btn-cancel" (click)="uploadMessage = ''; selectedFile = null">Cancel</button>
+    </div>
+    <span *ngIf="uploading" class="spinner"></span>
+  </div>
+</div>
+
+<div class="rag-container">
+  <header class="search-header">
+    <h1>Multimodal Retrieval Augmented Generation System</h1>
+    <h4>This tool takes in pdf files and generates answers or images</h4>
+    <p>Ask a question or search for images...</p>
+  </header>
+
+  <div class="search-bar-wrapper">
+    <input
+      type="text"
+      class="main-search-input"
+      [(ngModel)]="query"
+      placeholder="Type your query here..."
+      (keyup.enter)="search()"
+    />
+    <div class="action-buttons">
+      <button class="btn-primary" (click)="search()">Search</button>
+    </div>
+  </div>
+
+  <!-- PDF List -->
+  <div class="pdf-list" *ngIf="userPdfs.length > 0 || loadingPdfs">
+    <h3>Your PDFs</h3>
+    <div *ngIf="loadingPdfs" class="pdf-loading">Loading...</div>
+    <div class="pdf-items" *ngIf="!loadingPdfs">
+      <div class="pdf-item" *ngFor="let pdf of userPdfs">
+        <div class="pdf-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/>
+          </svg>
+        </div>
+        <div class="pdf-info">
+          <span class="pdf-name">{{ pdf.filename }}</span>
+          <span class="pdf-size">{{ pdf.size_kb }} KB</span>
+        </div>
+        <span class="pdf-status" [class.ready]="pdf.status === 'ready'"
+              [class.processing]="pdf.status === 'processing'">
+          {{ pdf.status === 'ready' ? 'Ready' : 'Processing...' }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-area">
+    <div *ngIf="loading" class="loading-state">
+      <p>Loading...</p>
+    </div>
+
+    <div *ngIf="!loading && result">
+      <div class="answer-section" *ngIf="result.answer">
+        <h3>Answer</h3>
+        <p>{{ result.answer }}</p>
+        <div class="sources" *ngIf="result.sources?.length">
+          <h4>Sources</h4>
+          <ul>
+            <li *ngFor="let source of result.sources">{{ source }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="images-section" *ngIf="result.images?.length">
+        <h3>Relevant Images</h3>
+        <div class="image-grid">
+          <div class="image-card" *ngFor="let img of result.images">
+            <img
+              [src]="getImageUrl(img.image_path)"
+              [alt]="img.source_pdf + ' — page ' + img.page_number"
+              [title]="img.source_pdf + ' — page ' + img.page_number"
+            />
+            <p>{{ img.source_pdf }} — Page {{ img.page_number }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="result.answer && result.images?.length === 0">
+        <p class="no-images">No relevant images found for this query.</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">PDF-RAG system</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Information</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="login-main">
+  <div class="login-card">
+    <div class="card-header">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </div>
+      <h2>Create Account</h2>
+      <p>Sign up for your PDF-RAG account</p>
+    </div>
+
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="error-msg" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input formControlName="email" type="email" placeholder="you@example.com" />
+        <span class="validation-msg" *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+          Valid email is required
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input formControlName="password" type="password" placeholder="Create a password" />
+        <span class="validation-msg" *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+          Password must be at least 6 characters
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input formControlName="confirmPassword" type="password" placeholder="Confirm your password" />
+        <span class="validation-msg" *ngIf="signupForm.get('confirmPassword')?.invalid && signupForm.get('confirmPassword')?.touched">
+          Please confirm your password
+        </span>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="loading">
+        {{ loading ? 'Creating account...' : 'Sign Up' }}
+      </button>
+
+      <div class="signup-link">
+        Already have an account? <a routerLink="/login">Login →</a>
+      </div>
+    </form>
+  </div>
+</div>

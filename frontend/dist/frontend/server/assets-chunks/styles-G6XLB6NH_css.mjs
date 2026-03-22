@@ -1,0 +1,2 @@
+export default `:host{display:block;margin:0;padding:0;background-image:url("./media/background-2BPMOIRN.png")}
+`;

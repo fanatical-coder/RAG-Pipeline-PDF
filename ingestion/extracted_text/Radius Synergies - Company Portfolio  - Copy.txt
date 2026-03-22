@@ -1,0 +1,494 @@
+--- Page 1 ---
+There are lots of firsts in India to our credit – starting from AMR based
+Prepaid Metering/AMI, Smart City, Smart Grid to FTTH
+Incorporation
+of Radius
+2003
+First AMR based
+Prepaid Metering
+System in India
+First Fiber to the
+home in India
+(FTTH)
+2014
+First Smart City
+in India – MWC,
+Jaipur
+1998
+2008
+2016
+2018
+Foray into global
+markets with Pilot
+projects @ Uganda
+1
+First Smart Grid
+Pilot in India –
+AVVNL, Ajmer
+2020
+First Multipoint solution
+provider as per UPERC
+13th Amendments
+2022
+AMISP Empanelment by
+REC based on CPRI
+Evaluation under RDSS
+
+--- Page 2 ---
+As of Today (2025)
+•
+Successfully empanelled as Advanced Metering Infrastructure (AMI) Service Provider for Smart
+Prepaid Metering in India on DBFOOT basis under RDSS.
+•
+Monitoring more than 2206 MW Feeder Power Distribution
+•
+Monitoring more than 15000 MW Power in near real time
+•
+Managing more than INR 1269 Cr revenue
+•
+Xenius Platform:
+•
+More than 290 million [29,24,28,823 hits] per day
+•
+Meter Reading count of 10^7 meter reads / hour
+•
+More than 600000 active prepaid customers connected to the Xenius Platform
+•
+Xenius end-to-end Platform deployed for Genco / Transco / Discoms
+•
+99 % SLA achieved as verified by Utilities.
+•
+Strong team strength of 300+
+•
+In-house Hardware/Software/Firmware development team
+•
+In-depth field experience gained by working closely with the Utilities in overcoming their challenges –
+Feeder mgmt. / Energy Audit / Consumer Metering & Billing.
+
+--- Page 3 ---
+Solution Performance
+• Xenius Solution achieving 99% compliance for following critical functional
+requirements (as certified by multiple DISCOMs)
+•
+App based field installation for immediate onboarding of consumers
+•
+Accurate and reliable granular data capture at predefined intervals, Accuracy of data because
+read of every 90 secs.
+•
+Near real time and accurate data with respect to balance, consumption and billing
+•
+Immediate recharge – balance up-dation within five minutes of recharge along with the
+issuance of user notification
+•
+Immediate Electric Supply Restoration after successful recharge
+•
+Proactive resolution of issues through extensive monitoring and data analysis
+•
+Scalable because distributed architecture for big time series data applications.
+•
+Robust time tested solutions already successfully operating in Discom’s.
+
+--- Page 4 ---
+OPRPUII 8 ee -
+!
+
+Stakeholders- Govt/Sovereign |
+
+@ National Smart Grid Mission
+
+Wo’ Ministry of Power,
+es Government of India
+
+By)
+
+balco NOIDA POWER COMPANY LIMITED BSES Yamuna Power Limited
+
+3S vedanta
+
+transforming elements
+
+><=NIUS
+
+Electric Supply
+
+--- Page 5 ---
+i... | | CELDECO
+
+Yaa ps Residency Green
+
+farsa API Cr Ashianal
+
+Nurturing Smiles
+
+Sunrise Greens
+Resident Welfare Associatio!
+
+><SNIUS
+
+--- Page 6 ---
+Process and Product Certifications
+Certifications
+Description
+Process
+Level
+CMMI Level -3
+IT Services, Web Technology, Software Development and
+Supporting
+ISO 9001: 2015
+Design, Development, Implementation and Maintenance of
+IT Products and Solutions on Turnkey Basis
+ISO 27001:2013
+ISO 14001 :2015
+Design, Development, Deployment and Field Maintenance
+Services of IOT/M2M Based Hardware and Software,
+Electrical Infrastructure & Related Automation Electric
+Vehicle Charging Infrastructure, Web Services, Mobile
+Application and Network Operation Centre
+ISO 20243-1:2018
+Product
+Level
+AMISP Approved Smart
+Metering Platform
+End-to-end Xenius platform approved by Ministry of Power,
+Govt of India under AMISP (Advanced Metering
+Infrastructure Service Provider) Smart Metering Program
+Security
+Level
+Communication
+Strong data encryption techniques, coupled with Private
+APN SIM cards, specifically provisioned for Radius.
+Cloud Hosted backend
+Xenius platform hosted on Govt of India MEITY-approved
+cloud infrastructure
+CERT.in
+Data Localization as per the data localization notification of
+Reserve Bank of India (RBI/2017-18/153)
+VAPT
+Periodic Vulnerability Assessment and Penetration Testing
+from approved agencies.
+
+--- Page 7 ---
+DPPH 8 ee _
+
+AMISP Empanelment Certificate :
+
+MINISTRY OF POWER Edt
+
+[oes cnn PEO
+| valid Upto: | 06" Oct, 2024
+
+end-to-end AMI prepaid solution
+
+certify hie prea EREE SS ws successfully demon
+
+nditioers of the RFE dated 2
+
+Details af locaaticn
+
+Communication Technology
+
+the purpose of participation in
+
+astructu Mi) Service Pr
+
+ders tor “Appartment of
+avider for Senart P
+
+said Metering in india on DBFOO
+the other terms and conditions of the respex
+
+><SNIUS
+
+--- Page 8 ---
+Solutions
+•
+AMR-based prepaid metering
+•
+Multipoint Prepaid metering
+•
+Feeder Monitoring System
+•
+Intelligent building management system
+•
+Sodality
+•
+EVCD
+•
+Balco
+•
+SFMS- State feeder monitoring system
+•
+Xenius Inside [ Solar Monitoring ]
+•
+End-to-end Smart Metering solution
+
+--- Page 9 ---
+Smart Meters
+Universal HES
+DCU
+MDMS
+Application Platform
+Meter Data
+Management System
+Head-End System
+Device
+Communication
+Layer
+Application
+Platform
+AMI – Adaptation Architecture
+
+--- Page 10 ---
+Smart Meters
+Head End System
+DCU
+MDMS
+Application Platform
+Meter Data
+Management System
+Head-End System
+Device
+Communication
+Layer
+Application
+Platform
+SDK/API for 3rd
+Party
+Integration
+Protocol Layer
+Device Physical
+Address
+Management
+Notification
+services
+Data Collection
+Management
+Northbound API
+Southbound API
+Device
+Authenticatio
+n
+Session
+Managemen
+t
+Communicatio
+n Management
+AAA,
+Privacy &
+Security
+IP Pool
+Manageme
+nt
+Reporting &
+Analytics
+Configuration &
+Provisioning
+Management
+Firmware
+Version
+Management
+RF/Gprs
+Diagnostic &
+Mngt
+
+--- Page 11 ---
+Smart Meters
+Universal HES
+DCU
+MDMS
+Meter Data
+Management
+System
+Head-End System
+Device
+Communication
+Layer
+Application
+Platform
+User Interface
+Net-Metering
+OMS
+Demand Control/ Response Support
+Revenue Protection Support
+Reportin
+g
+Analysis
+Service Orders
+Customer Service Support
+Exception Management
+Billing Determinants Calculations
+Data Validation, Estimation, and Editing (VEE)
+AMI Installation Support
+Asset
+Management
+Integration
+with Third
+Party
+Applications
+SAP
+CRM
+Utility Billing
+Engine
+Big Data Analytics
+IVR
+S
+Forecasting
+Application Platform
+Real-Time Pricing
+
+--- Page 12 ---
+Smart Meters
+Universal HES
+DCU
+MDMS
+Meter Data
+Management System
+Head-End System
+Device
+Communication
+Layer
+Application
+Platform
+Application Platform
+Prepaid Billing
+UI Dashboard
+Mobile App
+GIS
+Partner Portal
+Self Care
+Self Service
+Portal
+Change
+Mgmt
+Inventory
+Mgmt
+Complaint
+Mgmt
+Incident &
+Problems
+Workforce
+Mgmt
+Repository
+Service
+Dashboard
+SLA
+Monitoring
+System
+Reports
+Network Operation Center
+(NOC)
+Notification Server
+Vendor
+Management
+Payment Gateway
+
+--- Page 13 ---
+High Level Service Delivery Architecture
+APPLICATION PLATFORM
+Feeder
+Monitoring
+System
+DT Monitoring
+Postpaid Metering
+Prepaid Metering
+Real-time Energy
+Audit
+Sub-station
+automation /
+SCADA
+API for Integrated
+Command Control Center
+(Smart City)
+Other Smart Grid
+Applications
+
+--- Page 14 ---
+Breakdown: Meters Supported with 30 Cr Hits/Day
+1. For 15-Minute Blocks:
+Each meter sends 96 blocks/day
+So, the number of meters supported =
+30,00,00,000 / 96 ≈31,25,000 meters
+Approx. 31.25 Lakh [ 3.1 Millions] smart meters (with 15-min interval profile data)
+2. For 30-Minute Blocks:
+Each meter sends 48 blocks/day
+So, the number of meters supported =
+30,00,00,000 / 48 ≈62,50,000 meters
+Approx. 62.5 Lakh [ 6.2 Millions ] smart meters (with 30-min interval profile data)
+
+--- Page 15 ---
+OrnADIUS®
+
+Thank You
+
+><SNIUS
+
+--- Page 16 ---
+High Level Service Delivery Architecture
+APPLICATION
+APPLICATION PLATFORM
+
+--- Page 17 ---
+OPPs 88 nnn ee ..
+
+| Cloud Based Platform Architecture i
+
+Smart Gateway :
+4G fallback2G
+} Private APN-M2M SIM !
+
+DG @m © RF
+Bridge 3 § bs |
+
+><=NIUS
+
+--- Page 18 ---
+DT Temperature
+Sensor
+Gateway / Modem
+Energy Monitoring
+Ambient
+Temperature Sensor
+Definable instant Alerts:
+• Voltage variation
+• Phase Imbalance
+• Low Power Factor
+• Ambient temperature vs. Oil
+temperature difference
+• Any sudden load variation
+Solution Benefits:
+• Outage monitoring
+• Automated DT health check
+• DT pre-damage alerts
+• DO port to actuate breaker of DT to reduce load to protect transformer
+• Preventive check of DT
+• Greater insight to prevent transformer break down due to phase imbalance
+• T&D reduction by consumer load re-arrangement
+Dash Board Features:
+• Status of DT on Google map
+• Customized reports
+• High granularity Data for near real time action
+• Actionable alerts
+• Mobile app
+• Alerts to designated officials along with escalation
+mechanism
+• Artificial intelligence for preventive maintenance post one
+year of Data analytics
+Gateway modem features:
+• GPRS/ NBIOT/ 4G initially can be GPRS upgradable to NBIOT/4G
+• IPV-4 and IPV-6 ready
+• Additional DI, AI and DO ports to integrate various sensors and to release
+command to external actuators
+• IP-55
+• Industrial grade components
+• RS-485/ 232 compatible
+Transformer Parameter:
+• DT Load kWh & kVAh
+• Phase voltage & Current
+• Power factor
+• DT fin temperature
+• Ambient temperature
+• Low Power Factor
+• Ambient temperature vs. Oil
+temperature difference
+• Any sudden load variation
+DT Monitoring System

@@ -1,0 +1,176 @@
+$primary: #ccaf97;
+$dark: #ea832e;
+$glass: rgba(255, 255, 255, 0.9);
+/* This removes the default 8px margin browsers add to the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Path to your image */
+  background-image: url('G:/VScodes/RAG/pdf_rag2/frontend/src/assets/background.png');
+  /* This makes the image cover the whole screen */
+  background-size: cover; 
+  
+  /* Keeps the image from moving when you scroll */
+  background-attachment: fixed; 
+  
+  /* Centers the image */
+  background-position: center;
+  
+  /* Prevents the image from tiling */
+  background-repeat: no-repeat; 
+}
+.navbar {
+  display: flex;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  align-items: center; // Vertically centers the content
+  justify-content: space-between;
+  background-color: #ea832e;
+  padding: 0 20px; // Adds some breathing room on the sides
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),    // Soft bottom shadow
+    0 10px 20px rgba(0, 0, 0, 0.08); // Deeper blur for height
+    
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); // Mimics a "base" edge
+  // Replace your flat background-color with this:
+  background: linear-gradient(180deg, #f09344 0%, #ea832e 100%);
+  
+  // Add a "highlight" line at the very top
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  .nav-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: 800;
+    font-style: italic;
+    gap: 300px; // Adds space between the brand and menu items
+  }
+
+  ul {
+    display: flex;         // THIS aligns Home, Info, and Contact horizontally
+    list-style-type: none; // THIS removes the bullet points
+    margin: 0;
+    padding: 0;
+    gap: 20px;             // Adds space between your menu items
+    margin-left: auto;
+    li {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 20px;
+      gap: 20px; // Adds space between the text and the icon
+    }
+  }
+
+  .btn-login {
+    background-color: $dark;
+    color : #ffffff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 0px;
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  a {
+    font-size: large;
+    font-weight: 700;
+    color: #ffffff; 
+    text-decoration: none;
+
+    &:visited { color: #ffffff; }
+    &:hover, &:focus { color: $primary; text-decoration: underline; }
+    &:active { color: $dark; }
+  }
+  }
+
+.rag-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  color: $primary;
+
+  .search-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 { font-weight: 800; color: $dark; margin-bottom: 10px;}
+    h4 { font-weight: 600; color: $primary; margin-bottom: 20px;}
+    p { color: $primary; }
+  }
+
+  .search-bar-wrapper {
+    background: $glass;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(231, 3, 3, 0.1);
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .main-search-input {
+      width: 100%;
+      border: none;
+      padding: 15px 20px;
+      font-size: 1.2rem;
+      outline: none;
+      background: transparent;
+      color: $dark;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 0 10px 10px 0;
+
+      button {
+        padding: 10px 25px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &.btn-primary { background: $primary; color: white; }
+        &.btn-secondary { background: #e9ecef; color: $dark; }
+        &:hover { opacity: 0.9; transform: translateY(-1px); }
+      }
+    }
+  }
+
+  .results-area {
+    margin-top: 40px;
+    color: #c88650;
+    
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      
+      .image-card img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(231, 3, 3, 0.1);
+      }
+    }
+  }
+}

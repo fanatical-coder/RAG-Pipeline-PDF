@@ -1,0 +1,578 @@
+--- Page 1 ---
+ORADIUS®
+
+WE DRIVE THE FUTURE OF
+
+TECHNOLOGY
+
+--- Page 3 ---
+OUR COMPANY
+
+Ol
+
+We believe in making lives better by ‘Humanizing Machines’ with a
+vision of smart living and connected world.
+
+We have a dedicated team, with expertise, experience and attitude
+to deliver and fix any issue. One can be assured of unparalleled
+product and customer support. For fast and proactive resolution,
+we have 24x7 NOC Support. Our 250+ committed employees
+continuously monitor the health of local devices and back-end
+resources ensuring a flawless experience for our customers.
+
+A dedicated facility for the prepaid metering system at Noida,
+Sector 63 combined with a 50+ strong in-house R&D team. Our
+commitment to service our customers with highly skilled technical
+support, high precision, and quality products set us apart from the
+rest.
+
+We uphold the highest standards of integrity, and honor the
+promise of transparency to our customers. The products and
+services we offer are fully compliant with various industry standards
+and adhere to the guidelines set forth by competent authorities for
+an loT/M2M Solution.
+
+www.xenius.in
+
+--- Page 4 ---
+OUR SOLUTIONS
+
+Driven by the objective of “Humanizing Machines”, XENIUS has designed
+
+and developed solutions for various sectors. Our commitment to service
+
+our customers with highly skilled technical support, high precision and
+
+quality products set us apart from the rest.
+
+Smart ESS
+
+smart City
+
+Prepaid Metering
+
+Water Management
+
+Sees
+
+Solar Power
+Monitoring
+
+=]
+
+fos]
+
+Electric Vehicle
+CarZing Dock(EVCD)
+
+Smart Grid
+
+Street Light
+Monitoring
+
+www.xenius.in
+
+--- Page 5 ---
+SMART ESS
+
+O03
+
+Xenius-powered Smart Electrical Sub-Station solution integrates all
+components of the electrical infrastructure. Multiple layers of
+intelligence are added through Radius’ proven loT/M2M-based
+technology enhancing reliability and eliminating the risk of failure. It
+involves safeguard measures by early indication of abnormalities
+and incorporating edge intelligence and controlling power network.
+
+Services offered:
+
+- Design Optimisation:
+
+* Load and power requirement analysis
+
+¢ Assessment of design requirement
+
+¢ Equipment sizing
+
+- Supply Installation Testing & Commissioning (SITC)
+
+¢ Selection of cables, switch-gears, breakers, transformers, LT
+panels, DG, solar plant
+
+* Installation of equipment, testing and commissioning and device
+integration
+
+- O&M:
+
+* Condition based monitoring
+
+* Online monitoring, reporting and alert generation
+
+* Predictive maintenance
+
+* Corrective and preventive maintenance avoiding occurrence of
+
+any breakdown
+
+Pha he ehhh lt ead
+Se ere WANE
+rep aT
+
+www.xenius.in
+
+--- Page 6 ---
+©
+==
+~
+LL
+_
+Ld
+=
+=
+<
+[a
+Ld
+~
+A.
+
+OA
+
+Radius pioneered the concept of AMR-based prepaid metering in
+2002, did its first implementation in 2003 and it is perfectly operational
+even till today. The Xenius Metering Solution by Radius is an OTT (Over
+the Top) solution, i.e. it can work on any meter. It collects near real-time
+data and sends it on a wireless network to the cloud via
+2G/3G/4G/NBloT. The data can then be accessed by consumers
+through their mobile phone applications. The same data is also accessed
+by dedicated Network Operation Centre (NOC) that monitors the
+overall health of the system. A dashboard is maintained with every
+consumer's power consumption in near real time as well as on daily,
+weekly, and monthly basis.
+
+Key Features
+
+¢ Xenius Dashboard — Dual Source Consumption history on prepaid
+meters, payment history, coupon generation, extensive reports,
+location of faulty sites and all other data points for smooth execution
+and proactive control is available on access controlled single XENIUS
+dashboard
+
+¢ Bill Generation — Software module available helps visualize and
+analyse usage of electricity via prepaid electric meter, and generate
+bills as per the defined billing cycles and tariff plans. The billing
+engine handles accounting of common area maintenance & other
+charges also
+
+Near Real Time Monitoring - 100% contactless
+prepaid metering providing near real-time updates
+for homeowners and real-estate developer/estate
+management agencies through web and apps helps
+visualize and optimize usage at respective levels
+
+Online Recharge — You can recharge your XENIUS
+Prepaid Meter using XENIUS mobile app, Net
+Banking, Credit Card or mobile wallets. For any
+isolated needs, the legacy mode of manual coupon
+generation and recharge is also supported
+
+Protect Revenue Loss — Unmetered energy is
+equivalent to revenue loss. Mostly it happens due to
+system malfunction. XENIUS Network Operation
+Center (NOC) monitors the near real-time health of
+devices to prevent such losses
+
+www.xenius.in
+
+--- Page 7 ---
+OS
+
+Integrated Building Management
+System (IBMS) offered by Radius
+provides an integrated platform for
+monitoring and controlling of
+various critical parameters with a
+view to improving and optimising
+the operational efficiency of a
+building. The system has proven
+potential of significantly reducing
+expenses for day-to-day operations
+of a building as also of making it get
+closer to green concepts by reducing
+its carbon footprints.
+
+Various commonly used sub-systems that synergize to
+orchestrate IBMS are:
+
+¢ Unified Command and Control — for aggregated visualisation and
+enabled decision-making
+
+* Utility and DG supply - Smart Energy Management and Data Analysis
+¢ Smart Street light Monitoring — time-based, lux-based, on-demand
+
+e Smart Water Management - Monitoring and controlling of various
+equipment like borewell motors, pumps, motorized values, level
+sensors and analytics-based water leakage/wastage etc. in an
+optimized manner for helping reduce wastage of water and energy
+utilized by various equipment
+
+¢ Environmental Monitoring - Smart Environmental Monitoring System to
+monitor and collect data regarding temperature, air quality and water
+quality to administer optimum levels in premises, remotely
+
+=
+4)
+=
+oa
+
+—_
+=
+Li
+=
+7)
+>
+”
+=
+za
+Li
+=
+Li
+O
+<
+z
+<
+=
+
+oO
+<
+[a
+=
+-
+[ss]
+[a
+Li
+=
+<
+is 4
+oO
+Lu
+=
+r=
+
+www.xenius.in
+
+--- Page 8 ---
+DG MONITORING
+
+06
+
+Our wireless Diesel Generator Monitoring is the first DG monitoring
+system which converts your genset into a SMART DG.
+
+While running at full capacity, Diesel generators are three times more
+efficient as compared to running on their partial capacity. Moreover,
+it causes damage to the generator. This reduces the maintenance
+intervals and increases operational expenses.
+
+Our DG Monitoring works on the principle of energy monitoring,
+auditing, and conservation. We help diesel generator manufacturing
+companies to optimize the output during non-optimal usage of the
+
+genset. We make solutions for optimal generation scheduling for
+minimization of fuel consumption.
+
+* Near real-time monitoring data for diesel generator
+* Optimization of diesel usage during peaks in demand
+
+¢ Smart management of devices ensuring best usage of DG capacity
+
+www.xenius.in
+
+--- Page 9 ---
+O7
+
+Water is a critical resource and it’s management is important for a healthy living. Scientists
+predict significant water cost increment in near future because of growing water shortages
+and continued infrastructure investments needed to save water. With a qualified team and
+over 5 years of implementation experience of water management, we have helped societies,
+apartments, agricultural irrigation and industries saving water and power.
+
+Key Features
+« Remote monitoring of water level in overhead and underground tanks
+¢ Cloud-based AMR of water meters
+
+* Remote monitoring of on/off status, phase wise voltage, current, and load on water
+pumps
+
+¢ Historical on-demand reports of on/off time and running duration for water pumps
+
+¢ Remote monitoring and historical on-demand report of Grid and
+DG power consumption by water pumps
+
+¢ Remotely switch on/ off water pumps with click of a button or a
+tap on PC or mobile
+
+¢ Automatic switch on/off and SMS alerts of water pumps by
+setting rules based on water level in tanks
+
+ALU
+
+=
+=
+Li
+=
+Lu
+oO
+<q
+z
+<
+=
+[s 4
+LL
+=
+<
+S
+
+www.xenius.in
+
+--- Page 10 ---
+OS
+
+Radius Smart Grid, Plug-n-Play Solution gives complete control to a power distribution
+(DISCOMs) company. It collects data in near real time, analyses it, and provides near
+real-time visualisation, deviations, actionable insights, alerts and a lot more.
+
+Radius is the pioneer in smart grid technology and holds the distinction of being the first
+company in India to have deployed it successfully in AVVNL, as declared by the Ministry of
+Power, Goverment of India, and National Smart Grid Mission (NSGM).
+
+Key Features
+
+¢ A plug-n-play device ecosystem that can be easily integrated with the existing metering
+and IT infrastructure
+
+* Comprehensive energy distribution dashboard to visualise geolocation-wise asset with
+near real-time energy data
+
+« Distribution network optimisation insights
+
+* Configurable alerts for AT&C losses, phase imbalance, low
+power factor and overloaded transformers etc.
+
+e Private APN for data security
+e Reliable self-healing mesh network topology
+
+¢ Mobile app for DISCOMs and consumers with consumption
+details and trends
+
+=
+[a 4
+Oo
+_
+Ls 4
+<
+=
+”
+
+www.xenius.in
+
+--- Page 11 ---
+O9
+
+XENIUS is the only company in India that has successfully implemented smart city model at
+Mahindra World City Jaipur in 2014.
+
+Inline with the government mission, XENIUS’ Smart City Solution provides an ecosystem
+which is safe, green and improves the quality of life. It is a system of subsystems built to
+manage Power, Water, Waste, Parking, Surveillance, and Communication Infrastructure.
+XENIUS’ proven technological solutions, domain expertise coupled with state of the art R&D
+facilities allow it to provide a world-class solution.
+
+Various sub-systems offered by XENIUS —
+
+¢ Unified Command and Control Platform — for aggregated visualization and decision
+making
+
+° Smart Energy Management and Data Analysis — Utility and DG supply
+* Smart Street Light Monitoring — time-based, lux-based, on-demand
+e Smart Water Management - for automated operations of motors and pumps
+
+XENIUS can design a custom solution using a suitable combination out of
+the above sub-systems or any additional sub-systems.
+
+Key Features
+
+Smart Metering Temperature Street Light
+Solution Monitoring Monitoring
+c fy
+Energy Parking Water Resource
+Management Management Management
+
+>
+=
+oO
+-
+[a
+<x
+=
+”
+
+Tu
+
+The =a
+eee Tia
+
++" RRR
+ARAB ed
+
+WE
+
+www.xenius.in
+
+--- Page 12 ---
+10
+
+Our Street Light Monitoring, monitors and control street lights through
+luminosity sensors to conserve energy. With no human interference
+required, our systems make sure the street lights are ON, only during
+required hours!
+
+Key Features:
+
+* Remote monitoring of on/off status, status time and status change
+type (auto/ manual) of the lights
+
+¢ Historical on-demand reports of on/off time and duration for the
+lights
+
+e Remote monitoring of Grid and DG power consumption by the
+lights
+
+¢ Historical on-demand reports of Grid and DG power consumption
+by the lights
+
+MONITORING
+
+=
+L
+©
+ol
+-
+Lu
+Lu
+[* 4
+=
+”
+
+e Remotely switch on/ off the zone lights with click of a button or tap
+from PC or Mobile
+
+e Automated switch on/off of common area lights by setting rules
+based on: Time — Lux Level — Day of week/holiday
+
+www.xenius.in
+
+--- Page 13 ---
+tT
+
+Xenius gets seamlessly integrated with Solar Inverters and helps monitor and manage various
+aspects from efficient operations as well as Monitoring and Verification (M&V) to meet
+regulatory needs. All the important data related to various sources of power like Solar, Grid,
+Battery, DG etc get visualized and managed in an intuitive manner. All this provided deep
+insights and helps meet the energy needs is an optimized manner, making the overall energy
+infrastructure much more efficient and agile.
+
+Few Highlights of our Solar Photovoltaics Monitoring System:
+
+¢ Increase uptime and leverage asset production more effectively
+
+¢ Take targeted actions based on observed trends or degradation of performance
+.
+
+View production data, warnings, alarms and many other key metrics in near real-time
+
+* Monitor your entire system of solar panels including main power and inverters
+
+Features
+Remote Management Health Monitoring
+Near Real Time Monitoring M&V Achievement
+
+)
+<
+&
+O
+=
+=
+fe)
+=
+co
+<
+=~
+fe)
+”
+
+www.xenius.in
+
+--- Page 14 ---
+12
+
+Electric Vehicle Carzing (Charging) Dock - EVCD is a DIY plug-n-play
+device with unmatched features - capable of charging electric
+
+two-wheelers, four-wheelers, e-rickshaws, e-golf-cart, and/or any
+e-mobility vehicle.
+
+EVCD is ideal for all residential and commercial spaces with its near
+real-time spot billing via QR code scanning. The web and app-based
+solution details out the charger locations on Google Map along with
+their charge fees too. Our system provides the ease of getting
+integrated with society's existing prepaid metering system as well.
+
+Key Features
+
+¢ Ideal for multi-storey buildings, commercial and office
+complexes, shopping malls, parking lots, hotels and resorts with
+near real-time spot billing.
+
+* Cutting-edge loT technology, low cost with unmatched features,
+DIY plug-n-play device
+
+CHARGING DOCK(EVCD)
+
+ELECTRIC VEHICLE
+
+e Capable of charging any e-mobility vehicle
+
+e Ease of revenue realisation for builders,
+RWAs, and recharge facility providers
+
+° Energy metering and billing
+standards-compliant
+
+¢ Integrated with all modes of online
+payments - you can now charge your EV
+
+with instant payments too
+
+¢ Grid interactive for Demand Side and Peak
+Load Management
+
+For Queries:
+
++91 8800494870 | evcd@radius.co.in
+
+www.evcd.in
+
+--- Page 16 ---
+Ornrgws*
+
+www.radius.co.in
+
+CLIENTS
+
+<=NIUS Radius Synergies International Pvt. Ltd.
+
+eran Mecioes 9g H-98, Sector 63, Noida, Uttar Pradesh - 201301
+www.xenius.in
+> +91 120 420 1765, +91 73030 93408
+
+3X4 info@xenius.in | info@radius.co.in

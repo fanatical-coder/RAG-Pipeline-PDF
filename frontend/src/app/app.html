@@ -1,0 +1,81 @@
+<router-outlet></router-outlet>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">PDF-RAG system</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Information</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="btn-login">Login</button>
+  </div>
+</nav>
+
+<div class="rag-container">
+  <header class="search-header">
+    <h1>Multimodal Retrieval Augmented Generation System</h1>
+    <h4>This tool takes in pdf files and generates answers or images</h4>
+    <p>Ask a question or search for images...</p>
+  </header>
+
+  <div class="search-bar-wrapper">
+    <input
+      type="text"
+      class="main-search-input"
+      [(ngModel)]="query"
+      placeholder="Type your query here..."
+      (keyup.enter)="search()"
+    />
+    <div class="action-buttons">
+      <button class="btn-primary" (click)="search()">Search</button>
+    </div>
+  </div>
+
+  <div class="results-area">
+
+    <!-- Loading state -->
+    <div *ngIf="loading" class="loading-state">
+      <p>Loading...</p>
+    </div>
+
+    <!-- Results -->
+    <div *ngIf="!loading && result">
+
+      <!-- Text answer -->
+      <div class="answer-section" *ngIf="result.answer">
+        <h3>Answer</h3>
+        <p>{{ result.answer }}</p>
+
+        <!-- Sources -->
+        <div class="sources" *ngIf="result.sources?.length">
+          <h4>Sources</h4>
+          <ul>
+            <li *ngFor="let source of result.sources">{{ source }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Relevant images below the answer -->
+      <div class="images-section" *ngIf="result.images?.length">
+        <h3>Relevant Images</h3>
+        <div class="image-grid">
+          <div class="image-card" *ngFor="let img of result.images">
+            <img
+              [src]="getImageUrl(img.image_path)"
+              [alt]="img.source_pdf + ' — page ' + img.page_number"
+              [title]="img.source_pdf + ' — page ' + img.page_number"
+              aria-label="Image from {{ img.source_pdf }} at page {{ img.page_number }}"
+            />
+            <p>{{ img.source_pdf }} — Page {{ img.page_number }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- No images found -->
+      <div *ngIf="result.answer && result.images?.length === 0">
+        <p class="no-images">No relevant images found for this query.</p>
+      </div>
+
+    </div>
+  </div>
+</div>

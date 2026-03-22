@@ -1,0 +1,2731 @@
+--- Page 1 ---
+Implementation guidelines 
+for deployment of multipoint 
+dual source metering
+
+--- Page 2 ---
+2 
+ 
+Table of Contents 
+Background ................................................................................................ 3 
+ 
+Selection/ Empanelment criteria and scope of Solution Provider .............. 15 
+ 
+Functional Requirements .......................................................................... 31
+
+--- Page 3 ---
+3 
+ 
+Background 
+As per the provisions of Electricity Act 2003 and UP supply code 2005 amended time to time, 
+DISCOMS under PVVNL has been sanctioning single point electricity to various group housings, 
+Multistory buildings and commercial shopping centers falling under DISCOMS under the PVVNL 
+jurisdiction. These connections are either in the name of Builder or RWA who are deemed 
+franchisee of the DISCOM. This system is being followed since more than a decade and 
+predominantly private builder built housing complexes use single point connection at the society 
+level and provide prepaid metering for individual units.  
+Current infrastructure deployment based on Single Point Connections 
+As of now, the entire in-premises electrical infrastructure is installed, operated and managed by 
+builders as this single infrastructure gets utilized for both types of supplies – Utility power and 
+DG using Dual Source Meters. 
+The description of such a system, as inspected and found at various group housing societies is 
+as under: 
+1. ONAN or dry type transformer of high capacity (more than 400 KVA) to save space for 
+electrical installation 
+2. 33KV to LT direct conversion to save space for electrical installation 
+3. Common LT Panel for Utility power & DG. 
+4. Single Cable from LT Panel to Meter Board. 
+5. Single Meter Panel with Dual Source Meter. 
+6. Change-over at LT Panel for Utility power & DG Supply. 
+7. Floor wise meter board on various floors of multi-story high-rise apartments. 
+8. Usage of high capacity transformers and switchgears normally not used by Utility. 
+Consumer Grievances: 
+In recent past, several complaints were received from housing societies individual consumers 
+that the respective maintenance agencies / RWA are charging exorbitantly and arbitrarily in 
+violation of tariff order issued by the Hon’ble UPERC, leading to loss on the part of consumers. 
+Considering the issues and concerns raised by consumers and to protect their interest, it has 
+been decided to provide multi point connections, i.e. each flat need to have its independent 
+connection from the utility.  
+The following is a compilation of grievances that came up from various consumers who are 
+residents of such group housing societies where there is single point distribution: 
+1. Builders are charging fixed charges as per the area sq. ft. though their contracted load is 
+quite less, thereby generating profit.  
+2. Builders are charging higher tariff than the tariff order. 
+3. Builders are charging hefty amount to the tune of 25,000/- per KW for load enhancement.
+
+--- Page 4 ---
+4 
+ 
+4. Builders are fleecing consumers by charging between Rupees 25,000/- to 50,000/- for 
+prepaid electricity system.  
+5. Builders are providing prepaid electricity by taking advance from customers and paying 
+the electricity dues on postpaid basis. In various cases builders have collected electricity 
+charges in advance but have not paid electricity bills. This led to disconnection of 
+electricity supply to the Multi-storied building. Since, consumers have already paid the 
+money for electricity consumed in advance to the builder or RWA, disconnection by utility 
+leads to litigation by consumer. Though in these cases builders/ RWAs are at fault, still 
+end consumer suffers due to default by builders/ RWAs. With no option left consumers 
+had to take recourse through legal means leading to litgations. In such cases, neither 
+utility is at fault nor end consumers of electricity, but utility suffers losses due to litigations 
+pending in courts. 
+6. Majority of the builders are not providing monthly electricity bill detailing utility and DG 
+units consumed by the customers which is a violation of CEA metering guideline/UP 
+Supply Code Guideline. 
+7. In various societies, builders have not installed suitable power management system while 
+deploying prepaid electricity infrastructure for monitoring of Utility power failure (outage) 
+time/DG running time with date & time stamp for verification with supplying substation 
+under PVVNL for any discrepancy. 
+8. Further, builders disconnect Utility power Supply for collection of other charges like 
+maintenance charges, etc. which contradicts the guidelines laid by the Hon’ble UPERC. 
+The guidelines suggest that electricity from Utility power should not be disconnected if 
+consumer has paid for Utility power Charges. 
+ 
+ 
+ 
+Feasibility study undertaken by core committee: 
+Constraints & Solution for Conversion  
+Issues 
+Findings 
+Deliberation and 
+recommendation
+Metering of 
+consumers 
+Dual register meters are being used 
+in all multistory buildings having 
+single point connection 
+Dual meters to be used to avoid 
+any additional infrastructure cost. 
+Also, creation of dual infra will 
+need additional space which is not 
+feasible.
+
+--- Page 5 ---
+5 
+ 
+Issues 
+Findings 
+Deliberation and 
+recommendation
+Same service 
+cable is being 
+used to supply 
+Utility power/ DG 
+power to 
+consumers. To 
+record Utility 
+power and 
+generator power 
+in different 
+registers of the 
+meter for billing, 
+which 
+technology to be 
+adopted.   
+ 
+Following types of technology is 
+being used to differentiate Utility 
+power and generator power: 
+a. DG running information 
+broadcast through Radio 
+frequency-based mesh network 
+– new buildings 
+b. Signal injector- older buildings 
+c. Connecting every meter with 
+wire for DG run signaling – old 
+buildings 
+It was found that all these meters 
+have two registers in which Utility 
+power consumption is recorded in 
+first register and DG power is 
+recorded in second register. To 
+discriminate source of power and 
+to register them in different 
+registers, meters are getting signal 
+to switch registers. 
+It was concluded that energy 
+meter should record Utility power 
+in default mode. Only in case of 
+generator power, meters should 
+be given command to switch 
+register. 
+Radio frequency-based mesh 
+network is recommended as there 
+is least chance of physical tamper. 
+These are being used 
+satisfactorily in new buildings.   
+How to bill 
+customers 
+through one 
+meter based on 
+dual supply 
+All billing and calculations are being 
+managed at software level and not 
+meter level 
+ 
+Other findings  
+ 
+a. All the metering establishments 
+are found without seals 
+b. Different makes of meters are 
+being used which generally and 
+presently not procured by 
+DISCOMs of UP. 
+c. The space in the metering room 
+of each floor and meter boxes 
+are too small. The present size
+
+--- Page 6 ---
+6 
+ 
+Issues 
+Findings 
+Deliberation and 
+recommendation
+of meters with transparent box 
+cannot be installed. 
+d. Electrical infrastructure, 
+transformer and switchgears are 
+of different specifications than 
+the DISCOMs specifications 
+and cannot be maintained by 
+DISCOMs due to unavailability 
+of these items with DISCOM. 
+e. Generally, all such group 
+housings have engaged 
+services of third parties for 
+metering & billing and 
+maintenance & management of 
+electrical infrastructure.  
+ 
+How to credit the amount for generator charges to 
+RWA?  
+ 
+How to achieve Dual accounting through Dual 
+meter? 
+ 
+How PVVNL will come to know monthly DG 
+amount to be credited to RWA? 
+Since there are two types of supply source to 
+consumers and PVVNL billing system has no 
+provision for generator billing through dual 
+meter, it is required that PVVNL should 
+implement prepaid electricity system for 
+UTILITY POWER and generator billing system 
+should remain prerogative of RWAs. 
+ 
+Since, meters have dual register and are 
+recording Utility power consumption in one 
+register and generator consumption in another 
+register, there should be dual accounting 
+mechanism in the back-end also in which 
+based on utility power consumption by 
+consumer, prepaid functionality shall be 
+implemented by DISCOM and based on 
+generator consumption data, RWAs shall 
+manage their accounting.
+
+--- Page 7 ---
+7 
+ 
+It recommended that DG metering data shall 
+be provided to RWAs through web /  cloud 
+based access controlled services.   
+As per present practice, it is observed that on 
+the back-end system utility power data and 
+generator data are being recorded separately. 
+Similar mechanism may be adopted. 
+In case if Utility power supply is available and 
+by mischief DG mode is made ON in the 
+meter; Utility power units will be registered in 
+generator register causing loss to DISCOM as 
+well as the consumer will raise concern of 
+high charging and the perpetrator will get 
+money. How do we achieve fool proof 
+mechanism for register switching in dual 
+meter?   
+In the dual metering system grid & DG supply can 
+be monitored at back-end, malfunction can be 
+detected through the various logic like sending 
+notification to concerned officials and affected 
+consumers etc. of the exceptional situation when 
+Utility power is available at building and DG power 
+is being registered in the consumer meter. 
+Since both the data shall be available at the back-
+end system, such software logics and related 
+response mechanism should  be created.    
+DG rate is constantly varying due to diesel 
+price variation. How to provide right to RWA to 
+change generator unit cost?  
+By providing DG data on separate cloud, rights 
+related to tariff, billing, load control and charging 
+mechanism will be in the control of RWA.  
+If someone bypasses the meter, how will the 
+DISCOM come to know? If in case of not 
+being able to identify the issue, billing the 
+same to RWA will lead to dispute. 
+Agency which will operate and maintain the system 
+will be responsible for the near real time energy 
+audit and reporting the exception to DISCOM and 
+it’s field officials on immediate basis. 
+There will be credit balance in almost all the 
+connected prepaid meters, hence, DISCOM 
+will be having money with respect to the 
+whole complex in its account. As per norms in 
+prepaid metering, DISCOM is not taking meter 
+reading.  
+How will we arrive at common area loss and 
+how the loss will be billed to RWA?
+Standalone prepaid meter shall not work in these 
+buildings. Only AMR based meter with prepayment 
+functionality implemented through back-end can 
+handle the complexity of dual metering in such 
+buildings.  
+Where should meter data reside?  
+Meter data should first land at UPPCL data centre. 
+The head end system (HES) at utility will receive 
+meter data and the same can be bifurcated further 
+into two databases. 
+ 
+One database shall keep utility power data and 
+another data base shall keep generator data.
+
+--- Page 8 ---
+8 
+ 
+How to bifurcate ownership of meter reading? 
+Can DG meter reading be forwarded to 
+another server outside UPPCL DC? 
+Generator database can be synced with external 
+server outside of UPPCL data centre. This external 
+server shall be used by RWAs for billing and other 
+charging and control mechanism. 
+UTILITY POWER and DG balance be kept 
+into two separate registers so that even in 
+case of zero balance in DG account, Utility 
+power supply may continue? 
+ 
+There will be dual accounting system in which 
+Utility power and generator accounts shall be 
+maintained in two separate servers. Accordingly, 
+there will be separate control over Utility power and 
+Generator supply. 
+ 
+Since, DG account is having zero balance, in case 
+of power source being DG, meter shall disconnect 
+the supply. 
+How to do energy audit? 
+LT CT Dual meter shall be required to be provided 
+on all common area points. These meters shall 
+also communicate with the back-end system. 
+Since, all the consumer dual meters data is 
+available at the back-end along with common area 
+meter data, the energy audit shall be done after 
+every 15 minutes. 
+This will also ensure that no pilferage is happening.
+Since DISCOM staff is not trained to handle 
+dual metering issues, its management and 
+billing for generator charges etc. how to 
+implement and run such systems keeping in 
+mind interest of DISCOM as well as RWA. 
+ 
+As of now, residential buildings are having 
+single point connection, DISCOMs were 
+not concerned regarding pilferage, energy 
+loss inside these buildings. 
+ 
+Electrical infrastructure created at these 
+buildings are of different specifications 
+than the practiced specifications at 
+DISCOMs of UP. Hence though DISCOMs 
+shall provide direct connection to end 
+users, maintenance of electrical 
+infrastructure through which Utility power 
+supply is provided to consumers cannot be 
+taken up by DISCOMs. 
+ 
+DISCOMs of UP have never procured dual 
+meters and neither have provision for 
+billing based on dual meter in its billing 
+system. 
+ 
+ 
+Engagement of implementation, operation 
+and maintenance agency for buildings. 
+ 
+ 
+Fool proof solution including web/ mobile 
+app for greater transparency to avoid 
+disputes with RWAs and consumers.
+
+--- Page 9 ---
+9 
+ 
+ 
+Metering at these buildings have grown in 
+ad-hoc fashion. In some cases metering 
+system provides good level of 
+transparency by enabling consumers to 
+track, monitor their electricity consumption 
+in real time through mobile and web based 
+applications, in some cases metering 
+system is being misused to fleece 
+customer by overcharging and no 
+ 
+Brief Outline to implement Multi-Point solution on single point electrical infrastructure  
+The overall solution to implement Multi-Point Electrical Connections comprises of the following 
+major steps: 
+1. Empanelment/Selection of Solution Provider including facility management services also 
+referred to as AMI Implementing Agency (AIA) by DISCOM with five years O&M service 
+contract. 
+2. Empanelment/Selection of Dual Source Dual Register meter manufacturers to supply 
+these special purpose meters.   
+3. Procurement and Installation of Dual Register Three phase meters for every metering 
+point / unit to record the Utility and DG consumption precisely. The meters need to be 
+preferrebly as per IS: 16444 or IS 13779 with IS 15959 DLMS support along with separate 
+disconnection mechanism for Utility or DG supply. Also, LT CT dual meters as per shall 
+be needed to be installed for installation on common area consumption points for common 
+area energy billing/ energy audit. 
+4. Integrated / Over The Top (OTT) arrangement (complying with relevant BIS standards if 
+applicable) that work as nodes on meters and provide information like electric demand 
+and energy consumption of consumers and other electrical assets deployed as part of 
+electric supply infrastructure 
+5. RF/GPRS/ 3G/ 4G/nbIoT/other secure communication network on (complying with 
+applicable standards). 
+6. Deployment of the communication infrastructure should be such that meter parameters 
+of all the connected energy meters should reach to the back-end in near real time so that 
+any anamoly in the system is detected instantly, near real time energy audit is done to 
+avoid any revenue loss to DISCOM. 
+7. Backend platform that can handle the data from both the sources of supply (Utility and 
+DG) and process the data appropriately. The backend system should be able to bifurcate 
+the data and pass on the DISCOM Energy consumption data to the respective DISCOM 
+for billing / accounting and the DG Energy consumption data to the RWA/Builder/Service 
+Provider’s cloud for appropriate accounting and billing on their part. The PVVNL Billing 
+part needs to work in Pre-paid mode. For the DG part, it will be the choice of 
+RWA/Builder/Service Provider whether they want to operate on Pre-paid or on post paid 
+basis. 
+8. AMR/AMI based solution with prepayment functionality implemented through back-end 
+can handle the complexity of dual metering in such buildings.
+
+--- Page 10 ---
+10 
+ 
+To achieve the aforesaid objective, the broader guidelines shall be the model document issued 
+by Central Electricity Authority in August 2016 with title Functional Requirements of Advance 
+Metering Infrastructure (AMI). However, as AMI solution guidelines issued by CEA is mainly 
+based on the requirements of Utility and Utility supplied power, to accommodate complexities of 
+Dual metering on the same electrical distribution infrastructure in these multistorey buildings, the 
+solution to be adopted should be balanced enough to meet the statutory requirements laid down 
+by CEA and other statutory Authorities as well as to handle the complexity of DG power, 
+transparency in handling consumer issues that may crop up.  
+Since, such dual meters get command to change its registry from one source to another source, 
+a fool proof mechanism of source change along with alerts/ notifications must be in place to 
+avoid revenue loss to utility as well as end consumers. 
+System Features: 
+Based on the site visits, observation of some existing single point solutions and deliberations 
+done by the committee, the following are the features that the system should be able to cater 
+to: 
+1. In all such buildings where single point is being converted into multi point connection, dual 
+register meters needs to be used. 
+2. Metering to be done at all the points required for energy audit/billing including 
+HT/LT CT Meters if required. Bidder has to read the data of such meters through 
+Modem/gateway and use it for energy audit & billing 
+3. Dual metering system for UTILITY POWER and DG power needs to be fool proof. 
+Robustness of this shall avoid any confusion with RWA and DISCOM in future as 
+discrepancy in this data shall lead to litigation. 
+4. Utility power register should be default mode for registration of power supplied to 
+customers. Generator mode should be triggered when generator supply is being fed into 
+electrical distribution network.  
+5. The meters used should have in-built disconnection facility as well as communication 
+facility with latest DLMS protocol. 
+6. Prepaid metering functionality should be back-end controlled so that mode of metering 
+and billing operation may be adopted as per the choice of either utility or of RWA. 
+7. There must be two sets of prepaid recharge coupon- one for UTILITY POWER supply 
+and another for DG supply. 
+8. UTILITY POWER recharge coupon needs to be integrated with PVVNL revenue 
+management system. All integration has to happen with automated processes. 
+9. DG meter data to be forwarded to another server/cloud with access control through 
+unique login for different RWAs and DG billing to be done by RWA.  
+10. DG tariff is to be decided by RWA, hence DG revenue management system to reside 
+outside of PVVNL data centre/ server. PVVNL to provide only DG consumption data to 
+outside server.
+
+--- Page 11 ---
+11 
+ 
+11. DG revenue management, collection on postpaid / prepaid shall be choice of RWA/ 
+Builders. Any amount pertaining to DG meter data shall accrue to RWA account. PVVNL 
+shall not have any intervention in this system. 
+12. Energy accounting shall be done by PVVNL for UTILITY POWER supply only. Energy 
+accounting for DG shall be done by respective RWAs.  
+13. While as per meter data received, PVVNL shall process UTILITY POWER reading as per 
+its established practices like billing, disconnection, load control, etc., and for DG data 
+RWA shall be free to implement their own mechanism. 
+14. Notification and alert for pre-defined exceptions like higher energy loss than defined limit, 
+meter registering energy while Utility power is available, etc. and Real time energy audit 
+should be available with 15 minutes granularity on back-end system. 
+15. For transparency and to avoid any issues related to Utility power / generator power 
+consumption issues and charges being deducted for common area power, a real time 
+mobile based application as prevalent in these buildings should be adopted. 
+16. Floor wise metering may also be allowed to counter space restraint and to mitigate any 
+pilferage. (In case of such availability). 
+17. Energy accounting and Common area electrical charges mechanism to be deployed 
+based on AMI/AMR. 
+18. Due to space constraints in the meter board/ small size of meter compartment, compact 
+meters. PVVNL may opt for multiple makes of meters for consumers of group housing 
+complex. 
+19. Essential clauses and capabilities of the Dual metering infrastructure agency must include 
+to provide centralized monitoring, NOC, generate alerts and reports as desired by 
+DISCOMs. 
+20. DISCOMs may appoint a nodal officer based at HQ to monitor the implementation and 
+compliance. Apart from this, contractors shall be required to be dedicatedly deployed 
+based on the size of society and manning standards. 
+Recommended Approach for implementation of Multipoint  
+1. AMI/AMR solution providers and/or meter manfacturers may be empaneled to  deploy, 
+manage and maintain AMI/AMR network at building level.  
+2. Empanelment of only those solution providers having technical capability and experience 
+to provide Dual HES for dual metering including deployment of Server as well as can 
+maintain uptime of server as per utility defined SLA. The empaneled solution provider to 
+be capable of providing UTILITY POWER data to PVVNL billing system in desired format 
+like MIOS and should be capable to integrate with PVVNL revenue system. 
+3. PVVNL to sign tripartite agreement with telecom service provider for M2M APN SIMs 
+through which AMI/AMR data in a secured manner land at HES at backend. 
+4. Other costs such as AMC of electrical infra/ management cost of internal system shall be 
+responsibility of Developer/ RWA.
+
+--- Page 13 ---
+13 
+ 
+Technical aspects 
+Proposed Architecture 
+ 
+Brief introduction of IT Infrastructure at PVVNL:  
+Existing IT system of PVVNL is based on unified access framework. The applications systems 
+are built upon WS* specifications using open industry standards of Web services using XML, 
+SOAP, WSDL and UDDI. Hence PVVNL intends to use existing integration middleware that is 
+based on Service Oriented Architecture (SOA) and uses publish / subscribe mechanism, to 
+move data between existing and proposed dual metering AMI/AMR system, without duplicity of 
+resources and with minimum overheads. Solution Providers are expected to have clear 
+understanding in this regard and willingness to adopt methodology that helps to build efficient 
+and integrated system to achieve the intended objectives. 
+1. Customer Care & Billing (CCB):  
+This refers to Billing System being used in PVVNL. The various modules available in CCB are 
+New Connection, Metering, Billing, Collection, Disconnection, and Customer Care Center. New 
+Connection deals with the procedure when a consumer applies for a new connection to power 
+utility. Metering includes installation of new meters, maintaining meter reads, managing meter 
+information, maintaining stock for meters. Billing includes manual and automated bill generation, 
+rates on the basis of which the bills are generated, bill message, bill printing, downloading & 
+uploading bills through Spot Billing Machine (SBM)/Mobile App Billing, manual adjustments, and 
+so on.  
+Collection includes accepting bill payments through different modes, partial payment approval & 
+acceptance, and so on. Disconnection aims to cover the process of utility initiated and consumer 
+requested disconnection. Customer Care Center deals with the process that describes the 
+management 
+of 
+consumer 
+service 
+by 
+processing 
+and 
+resolving 
+consumer 
+requests/queries/complaints in minimum possible time by taking up it at appropriate place and 
+level. 
+The various features of Collection module are listed below: 
+ 
+Different Mode of Payments at Cashiering Station: Consumer can pay their debts in 
+Cash, Cheque, DD, Credit / Debit Cards. 
+ 
+Other payment options: Consumer can also pay their debts through Internet using Net 
+Banking, ECS 
+ 
+Acknowledgement of Every Payment: Consumer will get SMS/Email acknowledging the 
+payment made 
+ 
+Triggers for payment reminder: Consumer will get reminder SMS/Email alert before due 
+date, to avoid late payment charges and disconnection 
+ 
+Meter Data Acquisition System (MDAS) and Energy Accounting (EA):
+
+--- Page 14 ---
+14 
+ 
+This refers to Meter Data Acquisition System and Energy Audit. MDAS aims at automating meter 
+data collection from system meters and HT / selective consumer meters on scheduled or request 
+basis, meter data validation, generation of alarm & notification based on condition of system 
+parameters. The system provides load survey parameters, energy parameters, and meter 
+events of AMI/AMR metering points for network analysis, billing & energy audit purpose.  
+EA deals with energy audit of power distribution utility which analyzes data irrespective of meter 
+make. The system enables to calculate HT loss, DT loss, Aggregated Technical & Commercial 
+(AT&C) loss for selected area/network. The system also computes various losses using network 
+data & configuration details from GIS, meter data from MDAS, billed energy, billed amount and 
+collection amount from MBC.
+
+--- Page 15 ---
+15 
+ 
+Selection/ Empanelment criteria and scope of Solution Provider  
+This section provides functional requirement of the Multi-Point Dual  Metering AMI/AMR system 
+intended to be installed along with the guidelines and methodology that will facilitate successful 
+installation, integration, operation and maintenance of a range of Dual Metering AMI/AMR 
+functionalities described in subsequent sections and technical specifications. 
+a) Multi Point Dual Metering AMI/AMR solution is intended to create an intelligent 
+communication network between the Dual register dual source meters installed at various 
+location i.e. towers, buildings consumer premises etc. and the utility business systems. The 
+Dual Metering AMI/AMR network shall facilitate collection of metering information automatically 
+and Network Operation Centre and passing on the alerts / reports obtained from the meters to 
+the designated offices and officers of utility as described in the technical specification. 
+b) Desired solution shall not only work for collection of metering data, but should be designed to 
+make possible availability of real-time distribution system information on existing Servers/ 
+Operator work stations (PCs) installed in Network Operation Centre. The Dual Metering Multi 
+Point AMI/AMR system should be able to provide following main functionalities: - 
+1. Automatic Meter Reading of the Consumers / meters for Multi Story complexes as 
+identified by PVVNL for both sources – Utility power and DG 
+2. Bifurcation of metering data received at Dual Metering AMI/AMR HES and posting of 
+Utility power reading in separate database and DG reading in separate database. 
+3. Real time supply source information without any time-lag, real time display of supply 
+status on the dashboard prepared for individual Group housing sites, monitoring with 
+alerts and alarm to designated numbers of any deviation/ discrepancy compared 
+against Utility power power availability vis-a-vis change of source of power at building 
+and also at consumer level. 
+4. Demand Side Management / Load Management for Utility power. 
+5. Energy Accounting and auditing. 
+6. Administrator and Maintenance Portal 
+7. Generation of automatic alert / alarm and notification of the same through SMS and 
+Email to designated officers of PVVNL. 
+8. Provide system outage / downtime data. 
+9. Provide cumulative daily peak load in the building vs. recording at single point meter 
+with time stamp. 
+10. North Bound Interface for integration with existing billing system of PVVNL. 
+11. Providing centrally administered prepaid electricity engine for Utility power with 
+different tariff category on unified infrastructure.  
+12. Automatic remote disconnection through prepaid engine on exhaust of prepaid 
+balance and automatic reconnection of consumer load when UPPCL billing system
+
+--- Page 16 ---
+16 
+ 
+provides information of individual consumer recharge to prepaid electricity engine 
+deployed by AIA. 
+c)  Solution provider (also referred to as AIA) will design appropriate architecture for providing 
+end to end metering solution. AIA is free to decide upon the best solution out of all the 
+available options. However, the entire responsibility of fully functional AMI system shall rest 
+with one agency i.e. AIA in order to meet the performance levels as given in this document. 
+The AIA may adopt Radio Frequency (RF) mesh in license free frequency band/ Power Line 
+Carrier Communication / Long range radio or GPRS/3G/4G/nbIoT communication 
+technology or RF based canopy system or a combination of these technologies as per the 
+site requirement adopting best available technology in the proposed area of implementation. 
+ 
+d)  The main objective of implementing the bidirectional meter communication and remote data 
+acquisition system is to acquire meter data automatically from different meters and for both 
+sources (Utility power and DG), monitor important distribution parameters, provide meter 
+data to billing system for accurate billing and reporting, generate and dispatch notification on 
+any abnormal activity / parameter in the network and use the data for several other analytical 
+applications. 
+e)  Implementation of AMI/AMR system implies the amalgamation of three major components 
+i.e. Meters, Communication media and the Meter Data Management along with the required 
+Dual- metering Head-end systems and other applications. The AMI solution as envisaged for 
+PVVNL shall comprise of Dual Source Meters with OTT node interfacing with meter’s optical 
+/ CMRI/ NIC port and shall push the meter data and alerts automatically at definable interval.  
+f)  The complete AMI solution should work on RF mesh technology or any other technology 
+after the approval from PVVNL for communication of consumer meters data with data 
+aggregators/concentrators. The meter data from aggregators will be transmitted through 
+secured M2M APN based GPRS/3G/4G network terminating its aggregated traffic through 
+MPLS links. The dual metering AMI system shall sync DG data to backend server with 
+external server through private MPLS link not having internet access to provide DG data to 
+developer/ RWA for their processing and operations.  Since the same meter shall be used 
+for receiving and acting on commands for Load control or disconnection issued by developer/ 
+RWA software system, only predefined and pre-approved formats will be allowed to pass 
+through Dual Metering HES system. No commands other than pre-approved shall be 
+accepted by Dual Metering HES system. 
+g) The proposed system is expected to provide continuous on-line monitoring and logging of 
+essentially, though not limited to, the following parameters in respect of all consumers for 
+Utility power and DG supply on near real time and/or scheduled basis: - 
+i. 
+Phase wise Voltage  
+ii. 
+Current on each phase 
+iii. 
+Power factor
+
+--- Page 17 ---
+17 
+ 
+iv. 
+Frequency 
+v. 
+kWh 
+vi. 
+kVAh 
+vii. 
+kW 
+viii. 
+kVA 
+ix. 
+Maximum Demand 
+x. 
+Outages 
+xi. 
+Reading in TOD registers. 
+xii. 
+Other available parameters. 
+ 
+h) The System must also have the capability to implement and integrate with advance analytical 
+applications. The System should be based on the following principles:  
+ 
+ 
+Interoperability: Should be capable of integration with existing systems of PVVNL. 
+ 
+Reliability: High up time 
+ 
+Scalability: Should support at least 5 Lac consumer base to be migrated to new multi-point 
+system.  
+ 
+Flexibility: The system should be flexible and adaptable to new requirements from time to time. 
+ 
+Modularity: PVVNL, as per requirement, should be able to implement any permutation and 
+combination of the functionalities, as stated above and in future the system deployed should be 
+upgradable to include any of the features mentioned in this document. 
+ 
+i) Through Single point meter the AMI system should be able to constantly monitor the following 
+parameters to take proactive measures. The functional Requirements for the same are as 
+below: 
+- 
+Integration of existing HT Energy Meter installed at single point.  
+- 
+PVVNL should be able to correlate events coming from different sources e.g. Outage 
+event coming from a meter/ other equipment in the network and an outage event 
+coming from the single point meter in the network to which the consumer is connected. 
+- 
+The system should have the capability to generate alerts for different events. The 
+system should also have the capability to assign the appropriate person for the alerts 
+to be sent as identified by PVVNL for various types of alerts.  Example of the Alerts 
+are  
+o Voltage imbalance in the phases  
+o Power factor falling below a certain level. 
+o Current and Load imbalance beyond defined limits. 
+ 
+- 
+Many developers are developing projects in phased manner and they take electricity 
+connection for initial phase of the project to provide electricity to the occupiers of the 
+complex. To stop unauthorized use of common power for construction purposes, 
+System should be capable of sending out alerts in case the un-usual load pattern is
+
+--- Page 18 ---
+18 
+ 
+observed. In case of such events, the alert should be sent to appropriate team as 
+identified by PVVNL. 
+j) The system should enable PVVNL to carry out Multi-Story Premises wise energy accounting, 
+which will account for the total energy output from the utility side and the consumption of the 
+same at the customer level and common area facilities, wherever applicable and identify 
+losses that will be required for accounting settlements with Builder/RWA.  
+- 
+With the injection and the consumption points covered, a near real time energy 
+accounting should be achieved.  
+- 
+With the help of energy accounting, T&D losses, commercial losses like Theft, 
+tamper would be detected. The AMI system shall inform PVVNL all such 
+societies registering losses beyond permissible limits as per directives of 
+PVVNL. 
+- 
+In case of deviation, beyond permissible limits, between the export of energy 
+and consumption recorded by all consumer/ common area meters, alerts 
+should be generated and the concerned PVVNL staff should be notified. It will 
+also help in identifying faulty meters and events of meter bypass at all levels. 
+k) AMI should be able to monitor power quality parameters as well as consumer connections 
+like 
+- 
+Power factor 
+- 
+Power on/off  
+- 
+Over Load and under Load  
+- 
+Over and under Voltage. 
+- 
+Over Current and under loading. 
+ 
+System should provide alerts to PVVNL on violation of threshold values as and when 
+occurred/recorded. The system should be able to provide supply outage report at single point 
+HT meter level also. 
+l)  The system should enable PVVNL to implement following functionalities, under the load 
+management initiative: 
+- 
+Remote disconnection of customer service connection due to prepaid balance 
+being insufficient or any other payment default or limiting the load of the customer 
+to a certain limit to manage load within available supply during peak hours. 
+- 
+Remotely reconnect or resume load to normal contracted load level following 
+payment (disconnected due to payment default) or if demand supply gap narrows.
+
+--- Page 19 ---
+19 
+ 
+- 
+To limit customer’s load, say for reasons like exceeding contracted load (and then 
+increase in contracted load on regularization/enhancement request by customer is 
+acknowledged and accounted for). 
+- 
+System should issue notification to consumers violating the contracted load and to 
+utility to take necessary action under regulatory frame work. 
+- 
+Remotely disconnect / reconnect customer load on customer request. 
+Similar features or as desired by RWA/Builder should be available for managing, accounting 
+of the DG Supply since supply source will be on their part.  
+The Installed devices should send acknowledgement of successfully completed and failed 
+disconnects, load limiting and reconnects to the back-end system. 
+m)  The consumer portal should give consumers access to view their own consumption. This 
+will help them to take informed decision on optimizing energy consumption based on the 
+tariff and source of supply (Utility power / DG) as per regulatory guidelines. Some of the 
+functions that should be supported are as below: 
+- 
+The customers should be able to view their live energy data on the portal for Utility 
+power and DG supplies. 
+- 
+The customers should be able to receive real-time messages on the portal / SMS/ Email 
+in case of any alerts set by them.  
+- 
+The customers should be able to view their historical data from the Web and app 
+Interface.  
+- 
+Utility should be able to notify the consumers on planned outages in their area.  
+- 
+The Web portal and apps should have an access control, i.e. a username and password 
+to access energy profile.  
+The consumer portal should be accessible from any web-based browser and app for smart 
+devices. 
+ 
+ 
+ 
+Multi-Point AMI System components 
+- 
+Dual Register Energy Meters for precisely recording Utility power and DG supplies. 
+ 
+- 
+Communication infrastructure 
+ 
+- 
+Head End System (HES) 
+ 
+- 
+Meter Data Management System (MDMS) 
+ 
+- 
+Web application with updated on-line data of consumers etc.
+
+--- Page 20 ---
+20 
+ 
+- 
+Mobile app: Providing interface for consumer to log in through android/iOS based 
+mobile app to see information related to his/her energy consumption.  
+ 
+I) 
+The selected/empanelled AMI Implementing Agency (AIA) / solution provider shall supply, 
+install, test and commission all the equipment, material & software viz. Meters/ OTT 
+module, data concentrator/ Aggregators, GPRS hardware, disconnection modules, the 
+Meter Data Management System (MDM) application, the server along with any licensed 
+software for hosting the same and other hardware and software applications which should 
+form the base computer station (BCS). The MDM should be a web-based application 
+which should be accessible from remote sub-divisions, circle and zonal offices. It should 
+have integration features with the billing servers of PVVNL. The AIA shall be responsible 
+to provide billing data of all the consumers under AMI in the format specified by PVVNL.  
+ 
+II) 
+The designated AIA may offer cloud based AMI solution on Miety approved cloud 
+vendors. AIA shall undertake the operation and maintenance of the complete AMI system 
+for complete contract period subsequent to its commissioning. The operation & 
+maintenance charges will include replacement of defective equipment/ material supplied 
+by the AIA, carrying out regular and periodic field activities required for ensuring proper 
+health of the deployed infrastructure etc. The AIA shall undertake following activities: 
+1. Operate the entire Multi Point system including onsite support to maintain all AMI 
+solution. For this, the AIA shall depute its personnel. PVVNL shall bear O&M charges 
+related to licensee’s billing and the obligations for O&M charges on account of DG 
+billing and data management management shall be borne by consumers and RWA. 
+2. The AIA shall also provide adequate manpower to maintain the system in the field for 
+complete contract period from the date of successful installation and commissioning of 
+the Multi Point system. The terms of such agreement shall be governed by tripartite 
+agreement. Initially the contract period will be 5 year then it can further be extended on 
+year to year basis on the same or lower rates on mutual acceptance. In case AIA is not 
+interested to continue after complete contract period, he will give a six month advance 
+notice to arrange a new AIA by Utility. The present AIA shall not be allowed to quit till 
+a new AIA take over all the System. Equipment supplied by AIA shall be the property 
+of PVVNL. 
+3. AIA shall be responsible for periodic testing, regulatory compliance certification on 
+periodic basis and necessary upgrading of the back-end software and device firmware. 
+AIA shall also be responsible for any modification in the back-end system, billing 
+system as per the instruction of the DISCOM during contract period. 
+4. During the operation period, the AIA shall carry out various activities like generation of 
+periodic MIS reports as required, updating of the database with respect to new 
+consumers on the advice of PVVNL.
+
+--- Page 21 ---
+21 
+ 
+5. Timely responding and attending to various operational queries and troubleshooting of 
+the problems and system malfunctioning. 
+6. The AIA will be required to provide adequate training to designated staff of PVVNL for 
+proper handling of the system, before handing over of the complete system. 
+7. After handing over of the system, the AIA will continue to support PVVNL for supply of 
+spares & trouble shooting for complete contract period. The terms and modalities for 
+future support shall be discussed and decided at appropriate time.  
+III) 
+Scope regarding Communication Services 
+1. The AIA shall be responsible for providing the communication services between the 
+Meters and the NOC/ Data Centre.  The Agency shall supply all the communication 
+modules including GPRS/ 3G/ 4G SIM and modems, if required. The monthly charges 
+to be paid to telecom service providers shall be in the scope of the AIA which shall be 
+paid by him before due date to avoid disruption in service. 
+2. The installation and configuration of the routers or any other communication 
+equipment(s) shall be the sole responsibility of the AIA.  
+3. All the equipment required to be installed at the consumer’s premises shall be installed 
+inside the Meter Box. 4. All equipment that will be installed across the communication 
+path (from dual meter to Data Centre), such as routers, modems and interface 
+converters shall be installed by the supplier in a secure way and he shall be responsible 
+for all cost associated with the installation.
+
+--- Page 22 ---
+22 
+ 
+Requirement of Mobile app 
+ 
+Mobile app shall be dedicated for UPPCL Consumers. Each user shall have their unique 
+credential. First time login password shall be provided to user. The moment users sign in to 
+mobile app, they shall be forced to change their password.  
+Back-end system shall have capability to map mobile numbers/ e-mail ID associated with user 
+ID. Password reset request may be entertained through user linked mobile number or e-mail or 
+combination of both.  
+ 
+ 
+Meter triggering process methodology and signal voltage range. 
+By default, meter shall measure energy in Grid mode. In case of DG running, DG signal shall 
+be fed to the meter.  
+ 
+Hardware specifications required for solution/servers. 
+The hardware configuration shall be in the scope of the bidder to store & process data of 1 million  
+nodes. Bidder may opt for suitable configuration extendable to accommodate data of 1 million 
+nodes. Bidder has to propose sizing of servers accordingly and has to upgrade as & when 
+required to meet out the performance. 
+Process of DG data segregation from DCU/Gateway 
+The Dual HES system shall receive separated data for DG & Grid and store in different database.  
+Meter data shall be received by DCP (Dual HES) at DC. DG data shall be routed to RWA/Builder 
+platform/cloud for billing & processing.  
+ 
+Billing engine features 
+ 
+Billing engine steps: 
+a. Mapping of consumers in DB 
+b. Mapping of consumers against DCU/ MCB ID. 
+c. Mapping of tariff data.  
+d. Real time meter data received from Gateway on HES.  
+e. Validation and verification of received data  
+f. Once Verified, Calculation of unit consumed as per the Tariff slab.  
+g. Calculated amount deduction from user wallet.
+
+--- Page 23 ---
+23 
+ 
+h. Wallet can be recharged through coupon / online payments options. 
+i. After successful recharge amount credited to user wallet. 
+ 
+Alert types and Severity 
+1. Gateway/ DCU/Meter disconnection -> Critical 
+2. Low balance -> Moderate 
+3. Grid power failure -> Critical 
+4. Zero Load on meter -> Moderate 
+5. Network Signal Strength -> Moderate
+
+--- Page 24 ---
+24 
+ 
+Methodology and Responsibility Matrix for implementing Multi Point AMI system  
+Involved Parties: DISCOM / PVVNL, RWA/Builder/Estate Management Agency; AIA 
+SN
+Functionality 
+Description 
+Responsibility 
+1 
+Survey of the 
+building to 
+physically identify 
+the consumers. 
+Consumer details 
+including email Id 
+& phone nos. to 
+be recorded. 
+The AIA shall undertake survey 
+of the allotted building. The role 
+of AIA shall also be to prepare 
+electrical distribution Single Line 
+Diagram along with all the 
+details like LT panel out goings, 
+feeder pillars, rating of 
+transformers, switchgears, size 
+of cable, common area load and 
+common area connected 
+equipment, DG capacity and all 
+relevant information. Consumer 
+premises maybe visited by AIA 
+in company of RWA/Builder staff 
+only. 
+Builder / RWA –to provide 
+all the technical details 
+along with electrical 
+distribution SLD etc. builder/ 
+RWA to provide tower wise 
+consumer list along with 
+area statement. 
+2 
+Recording of 
+current meter 
+reading before 
+installation of Dual 
+Source Meter for 
+proper 
+reconciliation of 
+billing as per 
+defined process of 
+meter change. 
+The AIA will provide the tower 
+wise list of consumers with 
+requisite details to RWA/Builder 
+for reconciliation and 
+accounting. 
+AIA- for providing the 
+required details. 
+RWA/Builder – For doing 
+their part of reconciliation / 
+billing etc. before the system 
+migration from current single 
+point to multi-point. 
+3 
+Installation of 
+individual 
+consumer dual 
+source meters / 
+OTT nodes  
+Installation of approved / 
+empaneled dual meters with 
+minimum interruption of power 
+supply to consumers 
+PVVNL - to provide authority 
+letter to AIA for accessing 
+the building/ consumer 
+premises during installation. 
+AIA- to complete installation 
+RWA/Builder – help facilitate 
+the installation process 
+under their supervision. 
+4 
+Reporting of the 
+inaccessible 
+The AIA shall provide list of all 
+the consumers whose premises 
+AIA - to provide the 
+inaccessible consumers list.
+
+--- Page 25 ---
+25 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+house/ consumers 
+are either locked or they are not 
+allowing the AIA/ PVVNL staff 
+for installation. 
+PVVNL - to take necessary 
+action for gaining access to 
+the reported premises 
+RWA/Builder – help facilitate 
+the installation process 
+5 
+Set up and 
+commissioning of 
+Servers/ routers/ 
+switches and 
+software 
+AIA shall install and commission 
+the server and integrate the 
+system with UPPCL back-end 
+for billing and other 
+functionalities. 
+UPPCL - for providing Air-
+conditioned space along 
+with free power supply 
+suitable for establishing the 
+Dual Metering AMI servers 
+and software. 
+AIA - for all the supplies, 
+installation, commissioning 
+and operations for the 
+specified period as per 
+specs. 
+6 
+Remote capturing 
+of meter data from 
+consumer meters 
+and other 
+measurement 
+points as per 
+scope. 
+Should capture the meter data 
+remotely from all the meters 
+installed at electrical distribution 
+infrastructure and Consumers 
+for sending it directly to the head 
+end system at DC/DR. 
+AIA 
+7 
+Provision of 
+secured 
+communication 
+media 
+The system should work on RF 
+mesh network data 
+concentrator/ aggregator for 
+data acquisition from consumer 
+meters and DT meters. The 
+Data Aggregator should work on 
+secured GPRS/ 3G / 4G /MPLS 
+or any other suitable secured 
+communication technology 
+between aggregator, consumers 
+and HES at DC/DR. The 
+aggregator shall have Dual 
+Communication channel ( e.g. 
+Dual SIM) one as active and 
+another as redundancy between 
+HES at DC/DR to meet uptime 
+AIA
+
+--- Page 26 ---
+26 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+SLA.  
+8 
+Energy 
+Accounting  
+Should provide energy 
+accounting. The energy audit 
+should be indicative of any 
+potential thefts or pilferages. AIA 
+shall create a web based portal 
+for online energy audit with 
+notifications/ alarms for defined 
+exceptions like high T&D loss/ 
+phase imbalance/ Low power 
+factor etc. 
+AIA 
+9 
+Remote 
+disconnection / 
+reconnection 
+separately for 
+Utility power and 
+DG supply.  
+Should provide remote 
+disconnection / reconnection of 
+consumer load for Utility power 
+and DG Supply separately. The 
+disconnection / reconnection 
+mode should be both automatic 
+(event driven) and manual 
+(remote) mode as per the option 
+of PVVNL. The system should 
+support disconnection 
+automatically say for load 
+management and non-payment 
+of dues by consumer. 
+ 
+System should also support 
+mass disconnection of DG 
+supply e.g.  black-out or grey out 
+feature to comply with 
+Environment Pollution 
+(Prevention & Control) Authority 
+for the National Capital Region 
+(EPCA) instructions released 
+time to time for NCR region.    
+ 
+DISCOM/PVVNL - for 
+specific instruction regarding 
+disconnections / 
+reconnections for Utility 
+power Supply 
+RWA/Builder – for specific 
+instructions regarding 
+disconnections / 
+reconnections for DG 
+Supply. 
+AIA for ensuring required 
+operations 
+ 
+ 
+10 
+Decision support 
+system 
+System should act as a 
+decision-support system with 
+distributed intelligence for: -  
+- Peak load monitoring for 
+augmentation of electrical 
+AIA
+
+--- Page 27 ---
+27 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+network element to meet 
+the increased demand / 
+load growth 
+- Power factor monitoring. 
+- Voltage monitoring to 
+identify low voltage areas.
+- Data capturing to identify 
+imbalance between 
+phases through single 
+point meter, substation 
+and 3 phase consumer 
+meters to increase 
+reliability/plan phase 
+balancing / advise 
+customer to balance load 
+amongst phases. 
+The system should identify 
+poorly performing areas in the 
+distribution network, based upon 
+the technical parameters, such 
+as area wise distribution losses, 
+theft, outages, overloaded 
+circuits/equipment, voltage 
+imbalance, reliability indices, 
+power quality. 
+The system should provide 
+flexibility to configure 
+parameters for near real time 
+monitoring and generating alerts 
+/ alarms basis the threshold 
+values configured by PVVNL for 
+parameters as Voltage, Current, 
+Power Factor, Load and 
+Frequency. Any similar 
+monitoring parameters to be set 
+separately for DG supply if 
+required by the RWA/Builder. 
+11 
+Database upgrade 
+actions 
+Release of new connections is a 
+regular process in utilities. After 
+PVVNL along with RWA/AIA 
+shall prepare modus
+
+--- Page 28 ---
+28 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+initial creation of database for 
+Society wise consumers, if any 
+new connection is released for 
+additional towers / consumers, 
+the same will be required to be 
+updated in the database. 
+operandi for such 
+connection request as well 
+as provisioning data input 
+along with details of 
+concerned DT. 
+ 
+AIA will physically verify the 
+connection details at site in 
+supervision of PVVNL staff 
+and update the database. 
+12 
+Accurate and 
+Reliable Detection 
+of Power Outages 
+and Restorations.  
+ 
+System should enable quick, 
+‘event-driven’ detection of utility 
+power outages and immediately 
+trigger the DG registry in the 
+dual meter to start recording the 
+backup power so as to have 
+error free accounting of energy. 
+The reverse phenomena should 
+also be detected and acted upon 
+with equal accuracy and 
+reliability so that at no point in 
+time, the source of supply 
+should get recorded incorrectly.  
+AIA 
+13 
+Monitoring of 
+consumer 
+performances 
+System should enable 
+monitoring of consumer 
+performance, e.g. insufficient 
+prepaid balance, contract 
+demand violation, peak load 
+violation, average power factor 
+etc. 
+The system should also have 
+provisions to cover usage 
+patterns to solve high 
+consumption complaints, 
+facilitate calculation of assessed 
+readings for defective meter 
+cases and detect low 
+consumption cases.  
+System should provide detection 
+AIA 
+PVVNL: to do follow-up 
+actions based on the 
+performance reports related 
+to Utility power Supply. 
+RWA/Builder: to do follow-
+up actions based on the 
+performance reports related 
+to DG Supply.
+
+--- Page 29 ---
+29 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+of faulty meters. 
+System should enable, through 
+consumer portal, access of 
+performance parameters and 
+meter consumption data to the 
+consumer for participation in 
+energy saving initiatives. 
+14 
+ 
+Enabling dispatch 
+of event 
+notifications 
+System should be capable of 
+dispatching of event notifications 
+to targeted recipients in the form 
+of SMS/ emails for faster field 
+response and decision-making. 
+AIA will be responsible for 
+interfacing their system with 
+PVVNL SMS gateway and 
+the AMI system should issue 
+alerts to the designated 
+DISCOM and PVVNL staffs 
+as per levels of the alerts 
+defined by PVVNL. Any 
+further management of SMS 
+alerts from their server shall 
+be the responsibility of 
+PVVNL. 
+The AIA may use its own 
+SMS gateway for sending 
+out SMS alerts on behalf of 
+RWA/Builder if desired by 
+the later. 
+15 
+Localized 
+Intelligence  
+The OTT devices/ meters 
+installed at distribution points 
+should have the capability to 
+perform load management 
+functions, even in absence of 
+connectivity to the HES, such as 
+load management, parameter 
+violation etc. except HES 
+interpreted parameters and 
+functions. 
+AIA 
+16 
+Generation of 
+Reports 
+All the MIS reports / event / 
+Energy accounting reports etc 
+shall be made available at the 
+server level of DC/DR/NOC 
+which shall be accessible to 
+AIA to ensure the 
+functionality and provide 
+user name and Pass words 
+to the designated officers as 
+notified by PVVNL.
+
+--- Page 30 ---
+30 
+ 
+SN
+Functionality 
+Description 
+Responsibility 
+designated officers of PVVNL 
+through internet as identified by 
+them.
+
+--- Page 31 ---
+31 
+ 
+Functional Requirements 
+General 
+1. All components / systems / products used in the solution will be based on applicable 
+national / international standards with valid certifications in place at the time of 
+implementation of Dual Metering AMI solution, unless exempted specifically or no 
+standard exists. In case of items for which standards are not published or not 
+mandated, a self-certified technical specification data sheet shall be submitted along 
+with the bid document. 
+2. Communication media will be used in strict accordance with applicable law and adhere 
+all regulatory guidelines (including limits of radiation prescribed for human safety) 
+having necessary approvals in place prior to filing of bid unless exempted specifically. 
+3. Only minimum parameters of components are mentioned, and implementation agency 
+is expected to use better / higher specifications required for end to end metering 
+solution, as complete system in holistic manner. 
+Modules 
+1. Three Phase whole current dual registry meters with disconnection switch   
+2. Adapter OTT Node in case meters are connected with PVVNL back-end system via 
+optical port/ physical communication port 
+ 
+Dual Registry Meters shall comply with the enclosed Technical Specifications. Three 
+Phase CT operated meter shall comply IS 14697. The supplier / manufacturer would 
+furnish valid BIS certification at the time of implementation of Dual Metering AMI solution. 
+The dual meter installation shall be done by the AMI Implementing Agency (AIA)/solution 
+provider as per the rules and regulations and practices of Utility. After meter installation, 
+customer identification no., meter ID, its hardware & software configuration, name plate 
+details, make, type i.e. 1 Phase or 3 Phase, etc. (as per requirement of PVVNL) shall be 
+updated in DCU/HES/MDM. The information would also be updated on the portal/app for 
+providing information to consumers. 
+ 
+The AIA may offer Over the Top (OTT) Nodes to be fitted on the optical port of the newly 
+installed meters or to be interfaced with the communication port like RS-232/ 485 of such 
+meters. 
+ 
+ 
+3. Communication infrastructure 
+The communication infrastructure should be based on RF mesh network. The back-haul 
+arrangement between DCU and HES shall be on GPRS/ 3G/4G/nbIoT. The 
+communication network shall be based on suitable standards from ITU/IEC/IEEE/CEN/ 
+CENELEC/ ETSI for NAN and WAN network. Communication network shall provide 
+reliable medium for two-way communication between meters & HES.
+
+--- Page 32 ---
+32 
+ 
+RF based network should either use license free frequency band available in India and / 
+or get necessary approvals from designated authorities. The engagement of network 
+service provider would be in the scope of AMI Implementing Agency to meet the 
+performance level as given in the document. 
+Network Security 
+ 
+The Network shall have adequate cyber security measures not limited to the measures 
+as described below. The network security would be extended to all the interfaces also. 
+(A) Secure Access Controls:  
+The system shall include mechanisms for defining and controlling user access to the 
+operating system environment and applications. Best practices from enterprise security 
+including password strength, password aging, password history, reuse prevention etc. 
+must be followed for access control. 
+(B) Authorization Controls:  
+A least privilege concept such that users are only allowed to use or access functions for 
+which they have been given authorization shall be available. 
+(C) Logging:  
+Logs must be maintained for all attempts to log on (both successful and unsuccessful), 
+any privilege change requests (both successful and unsuccessful), user actions affecting 
+security (such as password changes), attempts to perform actions not authorized by the 
+authorization controls, all configuration changes etc. Additionally, the access to such logs 
+must be controlled in accordance to the least-privilege concept mentioned above, so that 
+entries may not be deleted, accidentally or maliciously. 
+· 
+(D) Hardening:  
+All unnecessary packages must be removed and/or disabled from the system. 
+Additionally, all unused operating system services and unused networking ports must be 
+disabled or blocked. Only secure maintenance access shall be permitted, and all known 
+insecure protocols shall be disabled. 
+(E) Malicious Software Prevention:  
+Implementation of anti-virus software and other malicious software prevention tools shall 
+be supported for all applications, servers, data bases etc. 
+(F) Network Security: 
+The network architecture of the HES must be secure with support for firewalls and 
+encryption. The system shall also allow host-based firewalls to be configured, as an 
+additional layer of security if the network firewall were to fail. 
+ 
+Back-end IT system and software
+
+--- Page 33 ---
+33 
+ 
+Dual Metering Head End System 
+Dual Metering Head End System is the critical interface to the field devices and is intended to 
+interact with complete device ecosystem to achieve the desired result of dual metering in the 
+context. It shall support Dual Meter Data Collection, support push and pull mode of data 
+collection from meters. Other than interacting with meters for stored metering data, dual metering 
+Head End system shall communicate with data aggregators/ concentrators, provide Network 
+Operation Centre functionality, remote device configuration and management, remote firmware 
+upgrades/programmable parameter inputs to network devices, send Load Curtailment signals, 
+disconnect / reconnect, alert and alarm management and other signals. The HES should 
+communicate with data aggregator through best suitable technology using GPRS / 3G / 
+4G/MPLS on private M2M APN and transporting data at DC/DR through MPLS connectivity for 
+maintaining the data security. 
+HES would perform all the requisite functions as per the defined functionalities of dual  metering 
+AMI and it will be the responsibility of the dual metering AMI Implementing Agency (AIA)/ 
+Solution Provider to supply the requisite software and hardware to achieve the defined 
+functionalities of dual metering AMI. Dual metering HES shall ensure data integrity checks, for 
+example, checksum, time check, pulse, overflow, etc. on all metered data. Dual metering HES 
+shall be based on open platform based on distributed architecture for scalability without 
+degradation of the performance using additional hardware. HES shall support storage of raw 
+meter data, alarms and alerts for minimum 7 days. Adequate data base and security features 
+for storage of data at HES needs to be ensured. 
+ 
+UPPCL has its billing engine deployed across the state and empanelled AIA/Solution Provider 
+should provide connectors from dual metering HES for Utility power billing data to the existing 
+billing system and MDAS of PVVNL. Dual metering HES shall be Service Oriented Architecture 
+(SOA) enabled.   
+Other Functional requirements 
+- 
+Since, the Dual metering Head End System to be deployed shall collect data from 
+peripheral devices other than meters and may release command for actuators/ relays 
+to operate, dual HES  should have SCADA features.  
+- 
+The Dual metering HES should support remote configuration of the device for different 
+parameters as time interval for data collection, setting of threshold parameters for alert 
+generation individually for UTILITY POWER and DG, replacement of meter, threshold 
+for theft / pilferage identification and threshold for power quality parameters as power 
+factor and voltage. 
+- 
+Dual metering HES shall support Over the Air Firmware upgrade for network devices 
+that may need upgradation to meet varying requirement of dual metering like Load
+
+--- Page 34 ---
+34 
+ 
+control/ dynamic tariff implementation of availability/ generation cost based tariff. 
+- 
+The Dual metering HES should maintain logs for all the events and should be capable 
+to reproduce it on demand. 
+- 
+Tampering events:  
+ Must be able to detect meter / device tampering, OTT Removal, Device 
+failure, communication failure. 
+ Communication failure between Meter/ OTT and HES / Meter faulty  
+- 
+Analytics based theft detection, based on data analysis/ analytics 
+- 
+Dual Meter shall send all the events to the Head End system.  
+- 
+If any discrepancy is found, compared to threshold parameters set by PVVNL, 
+automatic notification shall be created for PVVNL representative or process to analyze 
+the tampering event and take appropriate action (for example, to create a service order 
+to investigate). 
+- 
+Time Sync: Solution provider to make sure to take appropriate measures to keep all 
+the components time synced to make sure that the data integrity is not compromised. 
+The functions of Dual metering HES should be: 
+o Acquisition of dual meter data on demand & at selectable periodicity for both 
+the source – Utility power and DG individually definable by DISCOM and/ or 
+developer/RWA 
+o Two-way communication with DCU if any 
+o Generate signals for connect & disconnect Audit trail and Event & Alarm 
+Logging 
+o Encryption of data for secure communication 
+o Maintain time sync with DCU if any 
+o Handling of Control signals / event messages on priority 
+o Communication device status and history 
+o Network information in case more than one technology is deployed in field 
+between the two devices 
+o Critical and non-critical reporting functionality. The suggestive critical events 
+may be alarms and event log for dual meter events like tamper/power failures 
+etc., if data is not received from DCU/Meter, if relay does not operate for 
+connect / disconnect or there is communication link failure with DCU/Meter or 
+network failure. Non critical events may be retry attempts on communication 
+failure, periodic reading missing and failure to connect etc. 
+MDM 
+The Meter Data Management System shall support storage, archiving, retrieval & analysis of 
+dual meter data and various other MIS. It shall act as a central data repository. Dual metering
+
+--- Page 35 ---
+35 
+ 
+MDM shall have capability to import raw or validated data in defined formats and export the 
+processed and validated data to various other systems sources and services in the agreed 
+format. It shall provide validated data for upstream systems such as billing, consumer 
+Information system, customer care, analytics, reporting, Network planning & analysis, load 
+analysis/forecasting, Peak Load Management, Outage management etc. 
+ 
+The Solution Provider / AIA shall specify and deliver an initial system that supports the collection 
+and storage of data for meeting the performance level for the defined no of consumer meters 
+(The exact Number as defined by PVVNL as per requirements with facility of future expansion. 
+The MDM shall have the ability to selectively choose which data to be maintained and which to 
+be purged or archived as per requirement of Utility (user selectable)) 
+ 
+Since, prepaid functionality is being achieved through near real time data acquisition from 
+consumer meters and Common area Power charges shall be deducted from consumer accounts 
+on daily basis, so the data should be stored in such way that it shall be readily available for Big 
+Data analytics and data science. The data stored shall be of time series form, which may be 
+used for data engineering purposes. 
+ 
+Functional Requirements of MDM 
+Asset Management 
+ The Dual metering MDM shall maintain information and relationships between the 
+installed meter location (society, apartment, shop address etc.), Consumer information 
+(Name etc.), Consumer account no, Meter ID, Type of Meter (type of consumer, 1 
+phase/3phase, with or without relay, etc.), Meter configuration (Demand integration 
+period, Load profile capture period etc.), GIS supplied information (longitude, latitude, 
+connection with feeder/ transformer/ pole etc.) etc.  
+ The software should support tracking the status of meters and communication equipment 
+from the date when they are installed in the field. The history of in-service asset location 
+is maintained throughout the device life with start and end dates associated with each in-
+service location reference. 
+ Ability to report and log any damage / deterioration in the meter attributable to consumer 
+/utility like aging and probable deviation of calibration due to ageing of meter/ 
+infrastructure.  
+AMI Installation Support 
+ The Dual metering MDM shall also support device lifecycle management from device 
+registration, installation, provisioning, operations and maintenance to decommissioning 
+etc. The MDM shall generate exceptions for meters or OTT modules not delivering the 
+correct meter data after installation. 
+ The MDM shall provide a reconciliation report that identifies the dual meters that have 
+been installed but not communicating for a designated (configurable) period. MDM shall 
+generate reports on the number of meters installed in comparison to the number of meters 
+successfully communicating. 
+ 
+Meter Data
+
+--- Page 36 ---
+36 
+ 
+ The MDM shall accept, input, process, store, and analyze Dual Meter data from Dual 
+metering HES and dual meter data collected through hand held meter reading 
+instruments and manual meter reads. In case of manual reads, provision should be there 
+to insert associated notes like assessed energy, etc. 
+ The MDM should accept, input, process, store, and analyze non-billing dual meter data 
+such as voltage and power quality data (like under/over voltage, etc.) as they are available 
+from dual metering AMI Head End Systems. The MDM should also support schedule and 
+on-demand meter reads and pinging of meter states by authorized users and by other 
+utility systems. 
+ The MDM shall provide storage of all collected Meter Data, events and alarm. It shall have 
+capacity of storing complete contract period data or more via archiving. 
+ Correctly track & resolve energy usage across meter changes with no loss of individual 
+meter data. 
+ Provide complete history and audit trail for all data collected from dual meters including 
+commands sent to meters and other devices for 30 days (configurable period). 
+ Execute on-demand read processes. 
+ Handle special metering configurations like multiple tariff category at same premises. 
+ The MDM shall have the ability to manage at a minimum 5-minute interval data. 
+ Data Integrity- AMI Implementing Agency (AIA) shall ensure data integrity checks on all 
+metered data received from data collection systems. 
+ 
+ Data Validation, Estimation, and Editing (VEE) 
+ 
+The validation and estimation of metered data shall be based on standard estimation methods.  
+ The MDM should support and maintain following data. 
+o Registered Read Data including register reads, daily billing cycle, as well as 
+derived billing determinants like TOU 
+o Interval Data channels with variable intervals and variable units of measure 
+o Calculated Data that is derived or computed such as billing determinants and 
+aggregated loads. 
+o Event data storage of all collected event and alarm data from meters, network 
+equipment, and MDMS itself 
+• 
+MDM shall flag, alarm and trigger an estimating process including but not limited to when 
+the following anomalies occur in the cumulative (“CUM”) register reads 
+ CUM Decrements within a billing cycle  
+ CUM reads increments more than configurable threshold 
+ Future or old read dates 
+ Number of digits exceeds number of meter dials 
+• 
+MDM shall detect, flag, alarm and trigger an estimating process including but not limited 
+to when the following anomalies occur in Time of Use (TOU) register reads 
+ Register Decrements  
+ Resets (to zero)  
+ CUM reads increments more than configurable threshold 
+ Future or old read dates
+
+--- Page 37 ---
+37 
+ 
+ Erratic compared to CUM read (sum of TOU reads minus CUM read) 
+ 
+ MDM shall detect, flag, alarm and trigger an estimating process including but not limited 
+to when the following anomalies occur in Demand register reads  
+ Do not reset on cycle 
+ Do not reset coincident with customer move-out or move-in 
+ Reset off cycle inappropriately 
+ Too high 
+ All data shall be transferred to billing system after meter data validation and estimation 
+including single point meter data with respect to energy audit. 
+ MDM shall estimate usage for non-metered service points such as street lights, common 
+area loads, water pump and lifts etc. 
+ The MDM shall maintain both the original received raw data in a non-manipulated state, 
+in addition to VEE data. 
+ Notwithstanding the latency of data collection via the AMI system, once the MDM receives 
+meter read data, the VEE process occurs in real-time and the post-VEE data is then 
+immediately available to user or external systems. 
+ The MDM shall be able to automatically flag data changes from manual edits, VEE 
+(Validating, Editing and Estimating) rules and data source corrections and electronically 
+generate audit trail with timestamps and user-ids. 
+ 
+Billing Determinants Calculations 
+The MDM- 
+ If required, MDM shall allow configuring multiple TOU/TOD options (e.g. the number 
+and duration of TOU rate periods) by customer type, tariffs and day type (weekend, 
+weekdays, and holidays) and by season. 
+ Shall support the processing of interval data into billing determinants to include the 
+following at a minimum: 
+ Total Consumption 
+ Consumption in different time blocks if required in the case of ToU billing 
+ Maximum Demand (in kW and kVA) 
+ Number of tamper counts 
+ Average power factor 
+ Shall process interval data and frame it into the appropriate TOU periods for 
+consumption and demand; for example, roll up 15/30-minute data intervals into hourly 
+data. 
+ Shall have the ability to properly account for special metering situations such as check 
+metering, sub metering, prepaid metering and net metering when calculating billing 
+determinants and sending them to billing and other systems. 
+ Shall have the ability to properly account for special situations including, but not limited 
+to, curtailment requests, demand response scenarios when calculating billing 
+determinants and sending them to the billing software. 
+ 
+Exception Management
+
+--- Page 38 ---
+38 
+ 
+ 
+Ability to capture and log data exceptions, problems and failures and to generate 
+management reports, provide trend analysis, automate generation of service 
+requests and track corrective actions. 
+ 
+Ability to group, prioritize, filter and send system generated alarms and events to 
+predetermined 
+email 
+addresses, 
+cellular 
+text 
+messages 
+to 
+phone 
+numbers/SMS/customer care etc. 
+ 
+Exception Generation – MDM shall generate exceptions based on configurable 
+business rules including but not limited to the following: 
+• Meter tamper alerts 
+• Communication module health alerts for Meter/DCU 
+• If the consumption is less/more than pre-defined average consumption 
+• Negative Consumption  
+• Power outage indications received from the Dual meter 
+Service Orders 
+ 
+The MDM shall generate service orders based on configurable rules for various 
+events and alarms such as stop meter, tampers, problem in communication networks, 
+AMI host server, etc. 
+ 
+MDM shall send service orders via SMS, email, etc. with the email addresses / phone 
+numbers being configurable. MDM shall receive feedback on action taken on the 
+service order and track the status of service orders. 
+Customer Service Support 
+ The solution shall provide customers with access to current and historical 
+consumption and interval data, outage flags, voltage and power quality indications. 
+The data shall be displayed in graphical and tabular form depending on user choice. 
+The Customer may also access data through customer portal. The solution shall 
+integrate via a user-friendly graphical interface. 
+ MDM shall support email/SMS notification of configured alarms & events to selected 
+users. 
+ The MDM shall support the web portal or shall have the ability to interface with the 3rd 
+party portal/utility portal to provide the consumer near real time online views of both 
+usage and cost and helping consumers to understand electricity usage and cost 
+information, alerts and notifications and energy savings tips with different levels of 
+detail. The portal should support the view for past electricity usage, last week’s, 
+yesterday’s, current days or other period etc. as per selection. 
+The portal should provide user friendly access to consumer for their data via colorful graphs and 
+charts and can download the data into a spreadsheet. It should support mobile app through 
+which consumer shall be able to log in through android/iOS based mobile app to see information 
+related to his energy consumption.  
+ Analysis  
+The MDM shall have analysis capability based on configurable business rules including but not 
+limited to the following: 
+ Display consumption/load profiles by configurable period (15/30 min, hour, day, month, year 
+etc.) day type (weekday, weekend, holiday, festival wise etc.) and by tariff, customer type, or 
+any user specified collection of meters. 
+ Generate peak & off-peak load patterns by aggregating all loads of consumer group.
+
+--- Page 39 ---
+39 
+ 
+o Perform building complex/ tower/ feeder wise energy audit. 
+o Perform load analysis for different groups and categories of consumers. 
+o Ability to provide the data to load forecasting, load or demand response 
+applications and perform error management like: Missed reads and intermittent 
+meter reads before taking into forecasting, load research or demand response 
+ Ability to configure the system to effectively visualize consumption trends, identify unusual 
+patterns, and visualize load analysis to understand which assets are being over utilized. 
+ Analyzing data to identify new patterns of usage, transformer overload alerts / demand – 
+supply gap alert etc. 
+ Ability to receive and store outage and restoration event data from meters and outage 
+systems and to log all such events for analysis. 
+ 
+ Reporting 
+The solution shall include a list of the standard reports that are provided with the MDM 
+including but not limited to following: 
+• 
+Daily data collection report 
+• 
+Usage exceptions 
+• 
+VEE validation failures 
+• 
+Missing interval Read date and times (on hourly, daily, weekly & monthly basis) 
+• 
+Physical meter events (install, remove, connect, disconnect) & meter reset report 
+• 
+Meter flags 
+• 
+Meter inventory  
+• 
+Defective meters 
+• 
+AMI performance measurements 
+• 
+Threshold Exception 
+The solution shall support users modifying standard reports to better meet specific reporting 
+requirements. 
+• 
+The MDM shall enable the Utility to deliver reports in standard digital format such as PDF, 
+Excel, etc. 
+• 
+Ability for GUI (Graphical User Interface) to set up or change report delivery to 
+configurable email addresses, network file directories, ftp sites or printer systems without 
+modifying source program code and without any proprietary language skills. 
+• 
+All queries shall be generated through user driven drop-down menu in GUI. 
+The empanelled agency shall provide example queries to support internal report generation 
+needs. 
+• 
+Ability to provide daily & weekly interface exception reports between MDM and other 
+subsystems e.g. billing, outage, etc. 
+Revenue Protection Support 
+• 
+Ability to analyze power outages, usage trends and usage profiles to identify potential 
+energy diversion situations, and produce daily reports, monthly reports and service order 
+requests for investigation. 
+• 
+The business rules for revenue protection alerts shall be configurable via user-friendly 
+interface. 
+• 
+The MDM shall filter out revenue protection alerts that may be caused by field activities if 
+the field activity information is provided to the MDM.
+
+--- Page 40 ---
+40 
+ 
+• 
+The MDM shall support the analytics/investigation (i.e. view current and historical usage 
+patterns) to valid suspected revenue protection issues. 
+ Demand Control / Demand Response Support 
+AIA shall describe how its MDM supports Smart Utility power Demand Response programs 
+involving Demand Response (DR) systems as part of PLM. The solution shall support the 
+following analysis: 
+• 
+Totaling the actual consumption during the DR event. 
+• 
+Totaling the actual consumption of different groups that participated in the DR event. 
+• 
+Comparing the actual to baseline consumption for the groups in above. 
+Outage Management System (OMS) / other smart utility power functionality support 
+MDM shall support OMS system as per the requirement of the utility.  
+Prepaid functionality 
+For achieving prepaid functionality, the system should have the following capabilities for Utility 
+power and DG supply: 
+• 
+The MDM should support pre-payment metering and capability to interface with pre-
+payment application of Utility and RWA Revenue Management System. 
+• 
+The prepayment should support the system that payment and connection parameters are 
+stored centrally, and the details are being updated to consumer portal/ app. 
+• 
+The system should periodically monitor the energy consumption of prepaid consumer and 
+decrease the available credit based on consumption. 
+• 
+The system should send connect/disconnect command on the basis of available credit as 
+per notified rules & regulations. 
+• 
+The system should send low-credit notifications to the consumer when their balance 
+approaches a threshold. The threshold should be definable by user and should have 
+provision for defining different threshold for Utility power and DG. 
+• 
+The system should support online / coupon-based mechanisms for recharging. 
+Interface (Web/Mobile App) 
+User Interface 
+The AMI Implementing Agency (AIA) shall provide user interface for the following: 
+ 
+Utility 
+User interface for utility shall have ability for at least the following functionality: 
+• 
+Display meter data at a user defined configurable cycle through a GUI that allows 
+authorized users to view energy usage patterns and the data behind them for selected 
+customers. 
+• 
+Compare multiple multi-story facilities against each other based on costs, average spend, 
+and cost by weather. 
+• 
+Allow authorized users to view metered data, initiate and view reports, modify 
+configurations, and initiate and update service requests via a GUI.
+
+--- Page 41 ---
+41 
+ 
+• 
+Display via a GUI the energy usage profile for a single meter or group of meters. The load 
+profile shall illustrate energy consumption and peak demand in user defined intervals for 
+a user-specified time period. 
+• 
+Access to historical energy usage and meter reads through the GUI. 
+• 
+GUI to clearly and visually distinguish between metered, estimated, allocated and 
+substituted data. 
+• 
+GUI to provide role-based access based on user identity and user role. Shall have 
+following types of users: 
+o Administrator 
+o Operator 
+o Field staff 
+o Viewer/Guest 
+ 
+• 
+Ability for utility through user interface to set up alarm and event notifications that can be 
+directed to a combination of configurable email addresses, cellular text messages or 
+phone numbers. 
+• 
+User interface for utility to update the credit amount of prepaid consumers to MDM. Such 
+type of user interface before login shall require password & login-id. For authentication. 
+User interface after getting information like consumer i.d., mobile number & recharge 
+amount etc. shall update the same to MDM. The details of payment information shall also 
+update to consumer through SMS, email etc. 
+Consumer 
+User interface for all authorized consumers shall have ability for at least the following 
+functionality: 
+o View metered data, initiate and view reports 
+o Can make request for connection/disconnection 
+o User can update mobile number/email 
+o Can initiate service requests for maximum demand updating, meter checking etc. 
+o Consumers can view recharge history & present balance. 
+O Recharge their account by logging on user interface. User interface shall require 
+consumer id., mobile number & password for secure login. This user interface shall be 
+integrated with the present online payment gateway of utility. 
+Integration with other Systems 
+MDM shall preferably interface with other systems on standard interfaces and the data exchange 
+models and interfaces shall comply with CIM / XML / IEC 61968/IS15959/ Indian Companion 
+Specification/ any other open standard. MDM solution shall be Service Oriented Architecture 
+(SOA) enabled. 
+MDM integration with other systems shall include but not limited to the following: 
+• 
+Dual metering HES for data exchange from other AMI solutions 
+• 
+Utility Administration 
+• 
+Existing other Data Collection Systems 
+• 
+IVR system, CRM, Consumer Portal 
+• 
+Billing and collection system
+
+--- Page 42 ---
+42 
+ 
+• 
+GIS Systems integration with MDM system 
+• 
+Support of interface with HHU or manual reading system etc. 
+• 
+RWA Revenue Management System (with limited data sharing with respect to DG Supply 
+only) 
+AMI Implementing Agency (AIA) should provide suitable number of HHUs to read and update 
+the data in MDM in case of any communication failure between meter and HES/MDM. 
+Performance Levels/ Service Level Agreement (SLA) 
+(a) These performance levels shall apply to the complete Multi-Point AMI system. 
+(b) AMI system includes the communications links provided by Network Provider /third parties 
+such as telecommunications companies and AMI Implementing Agency (AIA) has to ensure 
+the desired performance level. 
+(c)The performance levels are average performance levels over the period of a year and 
+exclude force majeure events. 
+The following are the required performance levels 
+Performance levels for collection of daily meter readings  
+The following are the performance levels required for the daily collection of the previous day’s 
+interval energy data and total accumulated energy: 
+(1) All interval data from 95% of meters within 8 hours after midnight; and 
+(2) All interval data from 99.9% of meters within 24 hours after midnight. 
+(3) In the event if data of a meter is not received beyond 24 hours, on occurrence of such 
+event beyond 4 times in a month. FMS charges of respective meter shall not be paid to 
+Service Provider. 
+Performance levels for remote reads of individual meters if data is not received on daily basis 
+The performance level of an individual read applies to the collection of seven days of interval 
+energy data and the current total accumulated energy from a particular AMI meter whose data 
+is not being received on daily basis. The performance level required shall be: 
+(1) Action performed at 90% of meters within 1 Hour; 
+(2) Action performed at 99% of meters within 2 hours; and 
+(3) Action performed at 99.9% of meters within 6 hours. 
+Performance level for remote load control commands for selected consumers, 
+The performance level required for individual meters shall be: 
+(1) Action performed at 95% of meters within 3minutes; 
+(2) Action performed at 99% of meters within 5Minutes 
+ 
+Performance level for remote connect/disconnect for selected consumers, 
+The performance level required for selected individual meters shall be: 
+(1) Action performed at 90% of meters within 2minutes;
+
+--- Page 43 ---
+43 
+ 
+(2) Action performed at 99% of meters within 3 minutes; and 
+(3) Action performed 99.9% of meters within 5 minutes. 
+Performance levels for meter’s failure to register energy as per energy source 
+Alarms to be received within 5 minutes. 
+ 
+Performance levels for updating of data on consumer portal/ app 
+The performance level of updating of individual consumer data on portal/ app after receiving 
+the data in MDM shall be: 
+ 
+(1) Action performed for 90% of consumers within 15 minutes after receiving the data in MDM; 
+(2) Action performed at 99.5% of meters within 30 minutes after receiving the data in MDM. 
+ 
+Performance levels for resolution of disconnection related issues 
+(1) Software related issues to be resolved within 1 hour 
+(2) Other issues to be resolved within 8 hours. 
+In case of default to above FMS Charges of respective meter will not be paid. 
+Performance levels for replacement of defective meters 
+(1) Meter should be replaced within 3 days. In case of default monthly FMS charges of that 
+meter will be deducted. 
+Remotely top-up amount 
+Delivery of top up amount/ credit 
+recharge in case of prepayment 
+post successful transaction from 
+payment gateway up to consumer 
+interface (command from HES) 
+99.9% meters within 
+30 minutes (delivered and intimated to 
+consumer) 
+System Availability 
+Availability of AMI System per 
+month 
+≥99.5% 
+ 
+The performance level for generation of bills would be as per requirement of the utility. The 
+performance levels regarding meter discovery time line after installation, on demand reading of 
+meter data for operational purposes, outage restoration enquiry response time etc. would also 
+be as per requirement of the utility.
+
+--- Page 44 ---
+44 
+ 
+Service Provider shall submit AMI generated reports for cases mentioned above based on 
+data available in HES. 
+ 
+Penalty for non achievement of Service Level Agreement (SLA)/ 
+Performance Level 
+ Beyond the minimum performance level as mentioned above for each 1% there shall be 
+penalty of 0.50% of monthly FMS charges. 
+ The total penalties under SLA categories are capped at [30%] of FMS Charges. Service 
+Provider shall ensure that the data collection and computation for the purpose of SLA 
+penalties (as mentioned above) should be automated and visualized in PVVNL/Officials 
+Interface. 
+Technical Obsolescence 
+The systems including communication technologies, which are at a risk of technical 
+obsolescence over the next few years and over the operating life of the system should be 
+identified and reported. This may also include end–of-sale and end-of-support policies governing 
+the proposed technologies. The compatibility between the various elements of the system need 
+to be considered and mitigation options, not be limited to periodic update from OEM /System 
+supplier, shall be indicated in detail.
+
+--- Page 45 ---
+45 
+ 
+Description of system architecture 
+SN
+Function 
+Requirement 
+1 
+Provision of an 
+integrated system of 
+hardware and 
+software to meet the 
+required 
+functionality 
+An integrated system should be provided to meet the 
+following functional requirements: - 
+- Real Time data acquisition from Dual Source Meters as per 
+configurable time interval. 
+- Supervisory function i.e. processing, monitoring, analysis and 
+diagnostics  
+- Data exchange between various devices installed in the 
+distribution network for rule-based actions. 
+- Storage of data  
+- Facility for user defined forms and reports  
+- Facility for RTC management 
+- Alarm list  
+- event list  
+- Parameter Limit value violations  
+- Configurable interval for acquiring energy accounting data 
+- Prepaid Functionality for Utility power and DG supplies 
+- Bifurcation of captured data to cleanly handle Utility power 
+data through PVVNL IT systems and DG data through 
+implementation agency / RWA IT systems with full isolation 
+and integrity. 
+ 
+2 
+Flexible deployment 
+/ implementation of 
+system 
+The system deployment/implementation should be flexible 
+and modular. PVVNL should be able to implement different 
+solutions in different areas depending on specific 
+requirement. For example, initially it may opt for all the 
+essential functionalities covered in the scope of work and 
+subsequently for some optional functionality as described in 
+Scope of work may also be considered without any 
+interface issues with the existing system. Also, the 
+deployed system should be upgradable without requiring 
+any hardware replacement except meters. 
+It should be understood that for the back-end IT system, 
+field device interface point is DCU. The DCU offered shall 
+act as a neutral communication middleware and should 
+seamlessly interface with existing as well as future field 
+devices, dual registry meters of different makes. To cater to 
+this requirement, DCU offered should have spare 
+communication ports/ physical interface point for integration 
+with different communication medium such as RF mesh,
+
+--- Page 46 ---
+46 
+ 
+SN
+Function 
+Requirement 
+Zig-bee, Wi-Fi, PLC etc.  
+3 
+Intelligent 
+middleware/ end 
+points 
+The middleware/ end point devices should be capable of 
+FOTA (Firmware over the Air) and OTA (Over The Air) 
+upgrade. There should be no requirement of change of 
+hardware with change of smart meters/ static meters. 
+4 
+Provision for push 
+and pull plus remote 
+and local data 
+collection 
+The system and devices should work on push and remote 
+mode of data collection i.e. the system shall support 
+configurable time interval for devices to push dual meter 
+data automatically to the head end. The system should also 
+support on demand data (pull) by the Utility and also 
+collection of data through a local terminal through RF 
+communication. 
+5 
+Facility for Web 
+based front end 
+Software shall have web based front end. 
+6 
+Provision for 
+flexibility, user 
+friendliness, 
+scalability & 
+Security 
+The software system shall be flexible in terms of System & 
+Application software.  
+The software should have necessary features to maintain 
+audit trails with complete event logging. The software shall 
+have multi-level configurable password control for data 
+protection, integrity and security of the system. The different 
+software features shall be protected by different passwords. 
+All configurations of User Management / Access Rights 
+shall be as per the requirements of PVVNL. 
+7 
+System with robust 
+architecture, high 
+availability and 
+reliability 
+The system should be based on a robust architecture model 
+/ framework that is highly scalable/ available/ reliable, gives 
+good performance, and offers distributed computing. 
+The AMI database servers shall be enterprise level 64- Bit 
+processor-based system and should be capable for fully 
+populated configuration of database related to Minimum 1 
+million consumers. 
+8 
+API Layer 
+The API Layer will be the interface of the head end with the 
+utility’s operations / dashboard user. The API will provide 
+the entire user interfaces for the operational and 
+supervisory activities involved in meter data acquisition, 
+processing and analysis. 
+9 
+Automatic workflow 
+process from data 
+acquisition to 
+analysis 
+Normal workflow processes from meter data acquisition to 
+analysis would be as automated as possible; for example, 
+user intervention would be sought only for data editing or 
+verification decisions.
+
+--- Page 47 ---
+47 
+ 
+SN
+Function 
+Requirement 
+10 
+Database 
+The database should comprise of an RDBMS that should 
+be designed to be able to maintain the relationships 
+between meter and network assets, network topology, user 
+privileges, service points, customer accounts and other 
+entities. 
+11 
+Maintenance of time 
+stamped database 
+The database should also maintain a time- series repository 
+that stores the data collected and processed from meters, 
+including interval usage data, event logs and outage history, 
+as well as derived data such as aggregations and asset 
+performance indicators like load factor and load duration 
+curves. 
+12 
+Optimal designing of 
+database 
+The database tier should be optimally designed to exploit 
+both normalized as well as multidimensional data models. 
+13 
+Network 
+Architecture 
+Group of Consumer meters will communicate with the Data 
+aggregator installed at suitable locations either in meter 
+rooms/ floors/ buildings. These data aggregators will 
+communicate with data concentrators on RF 
+communication. Data concentrators/ aggregators / 
+Consumers meters will form a RF mesh with proper security 
+mechanism in place.  
+Bi-directional communications between Gateway and Head 
+End System should be achieved in following way: - 
+i. Communicatio protocol between Gateway and dual HES shall  
+be based on TCP-IP (IPv4/IPv6) 
+ii. Gateway hardware and Head End System must support IPv6  
+iii. Dual Meters to Data aggregator over control wiring. 
+iv. Data aggregators to data Concentrator Unit (DCU) over RF 
+Mesh. This will form the Neighborhood Area Network (NAN). 
+v. DCU to be Installed at each building or as per requirement of 
+frequency of meter data reads for effective implementation of 
+centrally controlled prepaid electricity system.. This may be 
+part of the RF NAN/ or can have GPRS/3G/4G SIMs. 
+vi. DCU/ Gateway  to dual metering Head-End System (HES) 
+over 4G with fall back to 3G/2G/ GPRS on private M2M APN. 
+This will be the part of Wide Area Network (WAN) 
+The RF network should support full mesh topology to 
+ensure that there are no dark spots in the network.
+
+--- Page 48 ---
+48 
+ 
+Acceptance Testing Criteria (primarily for PVVNL related Utility power Data) 
+ 
+The acceptance testing criteria mentioned herein shall be applicable for declaring successful 
+commissioning of AMI system. The bidder shall be required to get the independent witness test 
+done at their own cost by NABL accredited lab of repute for first site before acceptance  by 
+DISCOM. 
+SN
+Function 
+Test Procedure 
+Desired Result 
+1 
+Type of 
+Consumer 
+Meters- Dual 
+Register  three 
+phase meters 
+as per IS 13779
+Type tested from a lab of repute, BIS 
+certified and IS-13779 marked 
+Change of energy meters 
+from existing to the meters of 
+empanelled 
+meter 
+manufacturers.  
+No change of single point HT 
+meters 
+Type of single 
+point HT/ LT 
+Meters – Static 
+Energy Meters 
+as per IS 14697 
+standards
+No change in the deployed energy meters 
+(with optical port) is allowed. The solution 
+should be deployed on the current energy 
+meters with optical port. 
+2 
+Mode of 
+Interface - 
+Optical or 
+RS232/485
+The device to be installed at the meter 
+should interface with the meter through 
+Optical Probe or RS232/485 port available 
+at meters.
+3 
+NAN 
+(Local/Neighbo
+urhood Access 
+Network) 
+The NAN network has to be setup on RF-
+865 MHz mesh network i.e. all consumer 
+meters 
+within 
+a 
+complex 
+need 
+to 
+communicate with the DCU on RF-865 
+MHz mesh network. There should be no 
+loss of data. The availability of the data will 
+be verified at the backend. Minimum 99% 
+of the data should be available over a 
+period of 15 days.  
+No 
+Loss 
+of 
+data.
+The availability of meter data 
+will be verified at the back-
+end, the minimum criteria is 
+99% over a period of 15 days 
+i.e. if the read interval is 5 
+minutes then a total 4320 
+readings should be taken in 15 
+days and to achieve the 
+success criteria a minimum of 
+4276 
+reading 
+per 
+meter 
+should be available at the 
+backend.
+4 
+Web Based 
+Interface 
+All the testing, setting of parameters, 
+viewing 
+of 
+report 
+& 
+notifications, 
+configuration, collection of meter data 
+should 
+be 
+available 
+through 
+Web 
+Interface. The Web Application should 
+have different access level i.e. facility to 
+create users with different access rights. 
+Multiple login (Minimum 10 users) should 
+be available.
+Successful execution of the 
+AT through Web Application.
+
+--- Page 49 ---
+49 
+ 
+SN
+Function 
+Test Procedure 
+Desired Result 
+5 
+Automatic 
+Meter Reading 
+of consumer 
+meter and 
+single point 
+meter 
+The meter reading of all the meters will be 
+physically verified with the readings 
+available at the head end system.  This 
+testing will be done in the field through the 
+Web Application. The meter reading 
+interval should be programmable in 
+multiple of 5 minutes with minimum 
+interval as 5 minutes.
+99% readings with timestamp 
+should be available at the 
+backend 
+6 
+Outage 
+Detection and 
+switching of 
+meter register 
+for Utility 
+power and DG 
+The Utility supply at single point meter will 
+be disconnected and it will be verified that 
+the system provides the information at the 
+backend with proper time stamp.  
+DG will be started. Consumer meters to 
+record energy consumption during DG run 
+period in DG register. Online dashboard to 
+provide DG running status. The system 
+should provide the information with time 
+stamp. 
+The Utility Supply will be restored, and the 
+system should provide the information with 
+time stamp. 
+While supply is on Utility power, DG will be 
+started. No consumer/ common area 
+meter should record consumption in DG 
+mode. 
+While supply is on Utility power, DCU shall 
+be switched off. After 15 minutes, DCU is 
+switched on. Consumption data should 
+come at the back-end as recorded in the 
+meter. 
+ The time of disconnection and restoration 
+will be verified in real time i.e. through the 
+Web Application and through the outage 
+report generated by the system. The 
+switch between Utility power and DG 
+should happen accurately and reliably with 
+consumption 
+recording 
+in 
+respective 
+registers and displayed through the web 
+interface of utility and / or RWA Revenue 
+Management System.
+99 % accuracy in outage 
+reporting i.e. out of 200 such 
+events minimum 198 should 
+be accurately reported. The 
+Web 
+application 
+should 
+provide information of outage 
+in near real time (maximum 
+permissible 
+delay 
+is 
+120 
+seconds)
+
+--- Page 50 ---
+50 
+ 
+SN
+Function 
+Test Procedure 
+Desired Result 
+7 
+Power Quality 
+Parameters - 
+Monitoring of 
+Voltage, Power 
+Factor, 
+frequency and 
+current 
+PVVNL will set the threshold limit for High 
+and Low Voltage alerts, Low Power factor 
+alerts, High & Low Frequency alerts and 
+High Current. The system should generate 
+alerts in real time if any of these limits are 
+breached. The limit setting will be done 
+from the backend i.e. through Web 
+Application. The provision to disable alert 
+for any of the parameters should also be 
+available.  
+99% of the alerts should be 
+recorded. 
+The threshold limits of 
+different parameters should 
+be changed through the Web 
+Application, as below:  
+- Voltage High and Low 
+- PF low 
+- Frequency High and Low 
+- Current High 
+Alerts should be deactivated 
+through Web Application
+9 
+Load 
+Management - 
+Restricting the 
+consumer load 
+to contracted 
+limit 
+PVVNL will set the load limit of consumer 
+if the load being consumed exceed the 
+contracted 
+load 
+the 
+system 
+should 
+disconnect the supply of the consumer. 
+Different Load will be set for different 
+consumer. Also, the system should work in 
+alert only mode i.e. the provision to 
+disconnect will be disabled but if consumer 
+exceeds load, appropriate alert should be 
+issued. The load setting can be done 
+either in kW or in kVA
+Disconnection of consumer on 
+exceeding load and issue of 
+proper 
+alert 
+message.
+Change of contracted load of 
+consumer 
+from 
+backend.
+No disconnection, alert only 
+mode 
+10 
+Remote 
+Disconnection  
+PVVNL through Web Application, will 
+disconnect the supply of consumer 
+The consumer supply should 
+be disconnected, and the 
+supply should not be available 
+to consumer.
+11 
+Prepaid 
+Functionality – 
+Automatic 
+Disconnection 
+and 
+Reconnection 
+The 
+consumer 
+supply 
+should 
+get 
+disconnected if his account balance is 
+exhausted, taking into consideration any 
+grace amount if applicable. The system 
+should disconnect the consumer if the 
+recharge amount is consumed and the 
+supply should be restored on recharging 
+the consumer. This will be done through 
+web application. There should be a 
+functionality to reconnect the consumer 
+without recharge also.
+Successful disconnection and 
+reconnection of prepaid 
+feature through web 
+application. This should work 
+equally well for Utility power 
+and DG supply.
+
+--- Page 51 ---
+51 
+ 
+SN
+Function 
+Test Procedure 
+Desired Result 
+12 
+Energy Audit 
+Data in kWH 
+This functioning is achieved by collecting 
+the kWH reading of all the meters, in a 
+complex, within a span of 4 to 5 minutes 
+i.e. if energy audit is required for 12:00 
+HRS then all the meters should be read 
+from 12:00 HRS to 12:05 HRS. The energy 
+audit interval will be programmed from the 
+backend. The minimum audit interval 
+should be 6 hours i.e. 4 energy audit data 
+point per day. The energy audit start time 
+should also be programmable. The Audit 
+reports will be physically verified for its 
+accuracy.
+The meter reading for all the 
+meters, for audit function, 
+should be within a span of not 
+more than 5 minutes to 
+maintain the accuracy of the 
+audit.  
+All 
+the 
+data 
+should 
+be 
+available with time stamp. 
+13 
+ 
+CAP power 
+deduction 
+mechanism 
+  
+The 
+electricity 
+consumption(energy 
+charges) and demand charges(fixed 
+charges) of common area supply to be 
+deducted on daily basis through prepaid 
+account balance of individual consumer 
+apportioned according to contracted 
+load of the consumer. 
+The Energy difference of the 
+reference meter & cumulative 
+consumption of meters of 
+individual consumers shall be 
+apportioned according to the 
+contracted load of the 
+individual consumers having 
+electricity connection in the 
+M.S. building. Software 
+should have the feature to 
+implement this mechanism. 
+14 
+Change of 
+Meter  
+Two to three meters (already integrated on 
+the system) will be changed and the 
+change will be updated on the system 
+through web application. On committing 
+the changes, the system should start 
+collecting the data from these meters. No 
+hardware change is allowed.
+Successful integration from 
+backend without changing the 
+hardware at the customer 
+premises or visiting the 
+customer premises. 
+15 
+Alert / Event 
+Notification 
+The AT Officer will test for the following 
+alerts  
+- Device Tamper i.e. opening the meter 
+box 
+- Device not communicating on Optical 
+probe removal (in case of (OTT)
+99% of the alerts should be 
+recorded. 
+16 
+Network 
+Monitoring 
+Centre
+All the devices should be centrally 
+monitored from a NOC and the deviations 
+should be updated on NOC in real time
+Availability of NOC 
+monitoring system
+
+--- Page 52 ---
+52 
+ 
+SN
+Function 
+Test Procedure 
+Desired Result 
+17 
+Localized 
+Intelligence - 
+Functioning of 
+critical 
+functions even 
+in absence of 
+backend 
+connectivity 
+The connectivity of Gateway / Data 
+Aggregator at the DT will be disconnected 
+from the backend system. The following 
+functionalities will be tested: - 
+- Disconnection of consumer on High / 
+Low Voltage and power factor 
+ 
+- The customer should be disconnect on 
+exceeding the contracted load
+99% accuracy 
+18 
+On 
+demand 
+reading 
+Though the system is fully automated, but 
+provision to pull the meter data should be 
+available. PVVNL AT Team will test by 
+issuing on demand commands from the 
+web application.
+99% success rate of on 
+demand reading 
+19 
+Firmware Over 
+the Air (FOTA) 
+The solution should support firmware 
+upgrade over the Air. The solution provider 
+will be required to demonstrate. For 
+example, a different make meter shall be 
+placed by removing existing meter. From 
+Back-end through FOTA, the meter should 
+be read without change of OTT hardware.
+Same OTT should work with 
+the new meter and the data 
+should get successfully read.  
+20 
+Consumer 
+Application  
+The AIA will provide a consumer 
+application smart phone through which 
+the consumer, on keying in his/her login 
+credentials, is able to view all the meter 
+parameters as reading, voltage, current, 
+power factor, load with time stamp. The 
+user interface should also be available on 
+Web.
+The users should be able to 
+monitor their meter data 
+21 
+Integration with 
+existing billing 
+The data should be in real time available 
+either 
+through 
+online 
+API 
+or 
+in 
+downloadable file format that can be 
+directly exported to billing system. 
+On demand availability of 
+billing data without requiring 
+any mediation layer for all 
+types of meters. The data for 
+different types of meters 
+should be available in 
+common format required by 
+the billing system.
+22 
+Integration with 
+existing 
+systems 
+The solution should provide XML / 
+SOAP/REST based interfaces to integrate 
+with existing or future system of PVVNL 
+Successful demonstration of 
+functionality.
