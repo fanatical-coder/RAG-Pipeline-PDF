@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 import shutil
 import asyncio
 from pathlib import Path
@@ -23,7 +24,12 @@ IMAGE_DIR = PROJECT_ROOT / "ingestion" / "images"
 DIST_DIR = PROJECT_ROOT / "frontend" / "dist" / "frontend"
 INGESTION_DIR = PROJECT_ROOT / "ingestion"
 
-cred = credentials.Certificate("serviceAccountKey.json")
+# ── Firebase init ─────────────────────────────────────────────────────────────
+firebase_creds = os.getenv("FIREBASE_CREDENTIALS")
+if firebase_creds:
+    cred = credentials.Certificate(json.loads(firebase_creds))
+else:
+    cred = credentials.Certificate("serviceAccountKey.json")  # local dev fallback
 firebase_admin.initialize_app(cred)
 
 security = HTTPBearer()
@@ -93,14 +99,15 @@ async def upload_status(filename: str, user=Depends(verify_token)):
 
 @app.post("/search")
 def search(req: QueryRequest, user=Depends(verify_token)):
-    return combined_search(req.query, user["uid"])  # 👈 user_id passed
+    return combined_search(req.query, user["uid"])
 
 @app.post("/search/stream")
 def search_stream(req: QueryRequest, user=Depends(verify_token)):
     return StreamingResponse(
-        combined_search_stream(req.query, user["uid"]),  # 👈 user_id passed
+        combined_search_stream(req.query, user["uid"]),
         media_type="text/plain",
     )
+
 @app.get("/pdfs")
 async def get_user_pdfs(user=Depends(verify_token)):
     user_id = user["uid"]
