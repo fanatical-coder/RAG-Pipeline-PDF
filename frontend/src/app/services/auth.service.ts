@@ -1,7 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { Auth, signInWithEmailAndPassword, 
          createUserWithEmailAndPassword, 
-         signOut, user } from '@angular/fire/auth';
+         signOut,user,GoogleAuthProvider,
+         signInWithPopup } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -28,6 +29,16 @@ export class AuthService {
   async login(email: string, password: string) {
     try {
       await signInWithEmailAndPassword(this.auth, email, password);
+      this.router.navigate(['/home']);
+    } catch (error: any) {
+      throw error;
+    }
+  }
+
+    async loginWithGoogle() {
+    try {
+      const provider = new GoogleAuthProvider();
+      await signInWithPopup(this.auth, provider);
       this.router.navigate(['/home']);
     } catch (error: any) {
       throw error;

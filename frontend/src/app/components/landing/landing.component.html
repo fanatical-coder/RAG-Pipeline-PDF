@@ -1,0 +1,86 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">PDF-RAG system</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-login" (click)="goToLogin()">Login</button>
+      <button class="btn-signup" (click)="goToSignup()">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-badge">Multimodal RAG System</div>
+  <h1>Chat with your <span>PDF documents</span> intelligently</h1>
+  <p>Upload your PDFs and instantly search through text and images using AI. Get precise answers with source citations in seconds.</p>
+  <div class="hero-actions">
+    <button class="btn-primary" (click)="goToSignup()">Get Started Free</button>
+    <button class="btn-secondary" (click)="goToLogin()">Login</button>
+  </div>
+</div>
+
+<!-- Features -->
+<div class="features" id="features">
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/>
+      </svg>
+    </div>
+    <h3>PDF Upload</h3>
+    <p>Upload any PDF and our system extracts text and images automatically.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+    </div>
+    <h3>Smart Search</h3>
+    <p>Ask questions in natural language and get accurate answers with citations.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-2 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+      </svg>
+    </div>
+    <h3>Image Retrieval</h3>
+    <p>Find relevant images from your PDFs using multimodal AI search.</p>
+  </div>
+</div>
+
+<!-- How it works -->
+<div class="how-it-works" id="how-it-works">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h4>Upload your PDF</h4>
+      <p>Drag and drop or select any PDF file</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h4>AI processes it</h4>
+      <p>Text and images are extracted and indexed</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h4>Ask anything</h4>
+      <p>Get instant answers with source citations</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Ready to transform how you read PDFs?</h2>
+  <p>Join and start extracting insights from your documents today.</p>
+  <button class="btn-cta" (click)="goToSignup()">Start for Free →</button>
+</div>

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule, RouterLink],
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.scss', 
+  styleUrl: './signup.component.scss',
 })
 export class SignupComponent {
   private fb = inject(FormBuilder);
@@ -23,6 +23,8 @@ export class SignupComponent {
 
   errorMessage = '';
   loading = false;
+  googleLoading = false;
+  googleError = '';
 
   async onSubmit() {
     if (this.signupForm.invalid) return;
@@ -40,6 +42,18 @@ export class SignupComponent {
       this.errorMessage = error.message;
     } finally {
       this.loading = false;
+    }
+  }
+
+  async loginWithGoogle() {
+    this.googleLoading = true;
+    this.googleError = '';
+    try {
+      await this.authService.loginWithGoogle();
+    } catch (error: any) {
+      this.googleError = error.message;
+    } finally {
+      this.googleLoading = false;
     }
   }
 }

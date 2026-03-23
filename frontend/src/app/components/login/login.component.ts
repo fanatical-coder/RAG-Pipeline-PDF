@@ -36,4 +36,19 @@ export class LoginComponent {
       this.loading = false;
     }
   }
+  googleLoading = false;
+  googleError = '';
+
+  async loginWithGoogle() {
+    this.googleLoading = true;
+    this.googleError = '';
+    try {
+      await this.authService.loginWithGoogle();
+    } catch (error: any) {
+      this.googleError = error.message;
+    } finally {
+      this.googleLoading = false;
+    }
+  }
 }
+
