@@ -8,8 +8,7 @@
     </ul>
     <div class="nav-actions">
       <button class="btn-upload" (click)="fileInput.click()">Upload PDF</button>
-      <input #fileInput type="file" accept=".pdf" style="display:none"
-             (change)="onFileSelected($event)" />
+      <input #fileInput type="file" accept=".pdf" style="display:none" (change)="onFileSelected($event)" />
       <button class="btn-login" (click)="logout()">Logout</button>
     </div>
   </div>
@@ -35,16 +34,34 @@
   </header>
 
   <div class="search-bar-wrapper">
+    <!-- 👇 updated input with disabled state and dynamic placeholder -->
     <input
       type="text"
       class="main-search-input"
       [(ngModel)]="query"
-      placeholder="Type your query here..."
+      [placeholder]="userPdfs.length === 0 ? 'Upload a PDF first to start searching...' : 'Type your query here...'"
+      [disabled]="userPdfs.length === 0"
       (keyup.enter)="search()"
     />
     <div class="action-buttons">
-      <button class="btn-primary" (click)="search()">Search</button>
+      <button class="btn-primary" (click)="search()" [disabled]="userPdfs.length === 0">Search</button>
     </div>
+  </div>
+
+  <!-- Onboarding hint — only shows when no PDFs uploaded yet -->
+  <div class="onboarding-hint" *ngIf="!loadingPdfs && userPdfs.length === 0">
+    <div class="onboarding-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/>
+      </svg>
+    </div>
+    <div class="onboarding-text">
+      <h3>Welcome, Let's get started </h3>
+      <p>Upload your first PDF using the <strong>Upload PDF</strong> button in the navbar to start searching through your documents.</p>
+    </div>
+    <button class="onboarding-btn" (click)="fileInput.click()">
+      Upload your first PDF
+    </button>
   </div>
 
   <!-- PDF List -->
@@ -63,7 +80,7 @@
           <span class="pdf-size">{{ pdf.size_kb }} KB</span>
         </div>
         <span class="pdf-status" [class.ready]="pdf.status === 'ready'"
-              [class.processing]="pdf.status === 'processing'">
+          [class.processing]="pdf.status === 'processing'">
           {{ pdf.status === 'ready' ? 'Ready' : 'Processing...' }}
         </span>
       </div>
@@ -91,11 +108,9 @@
         <h3>Relevant Images</h3>
         <div class="image-grid">
           <div class="image-card" *ngFor="let img of result.images">
-            <img
-              [src]="getImageUrl(img.image_path)"
+            <img [src]="getImageUrl(img.image_path)"
               [alt]="img.source_pdf + ' — page ' + img.page_number"
-              [title]="img.source_pdf + ' — page ' + img.page_number"
-            />
+              [title]="img.source_pdf + ' — page ' + img.page_number" />
             <p>{{ img.source_pdf }} — Page {{ img.page_number }}</p>
           </div>
         </div>

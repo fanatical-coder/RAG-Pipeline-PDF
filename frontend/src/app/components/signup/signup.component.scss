@@ -107,11 +107,12 @@ $glass: rgba(255, 255, 255, 0.92);
 .login-card {
   background: $glass;
   border-radius: 20px;
-  padding: 40px 36px;
+  padding: 40px 40px;
   width: 100%;
-  max-width: 420px;
+  max-width: 380px;
   border: 1px solid $border;
   box-shadow: 0 20px 60px rgba(59, 92, 58, 0.1);
+  font-style: normal;
 
   .card-header {
     text-align: center;
@@ -131,7 +132,7 @@ $glass: rgba(255, 255, 255, 0.92);
     h2 {
       font-size: 22px;
       font-weight: 800;
-      font-style: italic;
+      font-style: normal;
       color: $sage;
       margin-bottom: 6px;
     }
@@ -154,6 +155,8 @@ $glass: rgba(255, 255, 255, 0.92);
 
   .form-group {
     margin-bottom: 18px;
+    width: 340px;
+    font-style: normal;
 
     label {
       display: block;

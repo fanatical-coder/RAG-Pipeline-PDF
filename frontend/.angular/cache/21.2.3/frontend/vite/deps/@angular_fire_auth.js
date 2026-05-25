@@ -1,3 +1,5 @@
+import "./chunk-D7VFKUJ5.js";
+import "./chunk-35QTRDTK.js";
 import {
   Component,
   Deferred,
@@ -42,8 +44,6 @@ import {
   ɵgetDefaultInstanceOf,
   ɵzoneWrap
 } from "./chunk-FNEB2OJF.js";
-import "./chunk-D7VFKUJ5.js";
-import "./chunk-35QTRDTK.js";
 import {
   InjectionToken,
   Injector,
